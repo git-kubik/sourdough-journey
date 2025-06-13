@@ -1,7 +1,7 @@
-site_name: Sourdough Journey
+site_name: MaK's Sourdough Journey
 site_url: https://example.com
-site_description: Documenting my journey as a sourdough baker
-site_author: Sourdough Baker
+site_description: MaK's personal journey mastering sourdough baking, with technical guidance from CodeCrust
+site_author: MaK & CodeCrust
 
 dev_addr: 0.0.0.0:5555
 
@@ -58,4 +58,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
+      link: https://github.com/git-kubik/sourdough-journey
+  generator: false
+  
+copyright: Copyright &copy; 2025 MaK & CodeCrust - Mastering the art of sourdough and code

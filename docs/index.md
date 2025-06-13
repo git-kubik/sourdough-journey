@@ -1,6 +1,6 @@
-# Welcome to My Sourdough Journey
+# Welcome to MaK's Sourdough Journey
 
-Welcome to my personal documentation of learning and mastering the art of sourdough baking. This site serves as both a reference guide and a chronicle of my baking adventures.
+Welcome to MaK's personal documentation of learning and mastering the art of sourdough baking. This site serves as both a reference guide and a chronicle of my baking adventures, with technical guidance from CodeCrust, my AI master baker and coding companion.
 
 ## What You'll Find Here
 
@@ -17,9 +17,11 @@ Welcome to my personal documentation of learning and mastering the art of sourdo
 ### 🔍 Troubleshooting
 - **[Common Issues](troubleshooting.md)**: Solutions to the most frequent sourdough challenges
 
-## My Sourdough Philosophy
+## MaK's Sourdough Philosophy
 
-After maintaining my starter for a month, I've learned that sourdough is as much about patience and observation as it is about technique. This documentation captures both the science and the art of sourdough baking.
+After maintaining my starter for a month, I've learned that sourdough is as much about patience and observation as it is about technique. This documentation captures both the science and the art of sourdough baking, combining traditional wisdom with modern precision.
+
+> *"Just as in coding, sourdough baking requires patience, iteration, and attention to detail. Each loaf is a deployment, each starter feed is a commit."* — CodeCrust
 
 ## Quick Start Guide
 
@@ -32,11 +34,13 @@ If you're ready to bake your first loaf:
 
 ## Current Focus
 
-I'm currently working on:
-- Perfecting my basic sourdough recipe
+MaK is currently working on:
+- Perfecting the basic sourdough recipe
 - Understanding fermentation timing
 - Developing consistent shaping techniques
 - Experimenting with different hydration levels
+
+While CodeCrust continues to optimize the documentation system, deployment pipeline, and technical infrastructure supporting this journey.
 
 ## Join the Journey
 
@@ -44,4 +48,12 @@ This site will grow as my skills develop. Each bake teaches something new, and I
 
 ---
 
-*"The secret to good bread is time, temperature, and attentiveness."*
+## About the Team
+
+**MaK** - The dedicated sourdough baker on a journey to master the craft, documenting every step, success, and lesson learned.
+
+**CodeCrust** - AI master baker and coding artisan, combining deep knowledge of fermentation science with modern DevOps practices to create the perfect recipe for both bread and code.
+
+---
+
+*"The secret to good bread is time, temperature, and attentiveness. The secret to good code is the same."* — CodeCrust

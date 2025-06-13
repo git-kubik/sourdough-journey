@@ -256,3 +256,7 @@ Stretch small piece of dough:
 Remember, your first loaf might not be perfect, and that's okay! Each bake teaches you something new about the process. Focus on learning the visual and tactile cues rather than strict timing.
 
 Happy baking! Your kitchen is about to smell amazing.
+
+---
+
+*"Like debugging code, baking sourdough is about patience, observation, and iterative improvement. Each loaf is a commit to your growing expertise."* — CodeCrust
