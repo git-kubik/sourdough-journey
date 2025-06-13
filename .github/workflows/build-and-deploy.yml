@@ -60,6 +60,32 @@ jobs:
           docker push "${tag}"
         done
     
+    - name: Deploy to Docker Swarm
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        # Check if we can deploy to swarm
+        SWARM_MANAGER="10.9.8.120"
+        
+        # Option 1: If this runner is the swarm manager
+        if docker node ls >/dev/null 2>&1; then
+          echo "🚀 Deploying to Docker Swarm (local manager)..."
+          docker stack deploy -c docker-compose.swarm.yml sourdough
+          sleep 10
+          docker service ls | grep sourdough
+          docker service ps sourdough_sourdough-docs
+        
+        # Option 2: If we can SSH to the swarm manager
+        elif ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=no ${SWARM_MANAGER} "echo 'Connected'" >/dev/null 2>&1; then
+          echo "🚀 Deploying to Docker Swarm via SSH to manager..."
+          scp docker-compose.swarm.yml ${SWARM_MANAGER}:/tmp/
+          ssh ${SWARM_MANAGER} "docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
+          echo "✅ Deployed to Swarm via remote manager"
+        
+        else
+          echo "⚠️ Cannot deploy to Swarm automatically. Manual deployment required."
+          echo "Run: ./scripts/deploy-to-swarm-remote.sh"
+        fi
+    
     - name: Output deployment info
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
@@ -73,3 +99,10 @@ jobs:
         echo '```bash' >> $GITHUB_STEP_SUMMARY
         echo "docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" >> $GITHUB_STEP_SUMMARY
         echo '```' >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        if docker node ls >/dev/null 2>&1; then
+          echo "**Swarm Deployment:** ✅ Deployed to swarm-worker-2" >> $GITHUB_STEP_SUMMARY
+          echo "**Access URL:** http://swarm-worker-2:8080" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "**Swarm Deployment:** ⚠️ Manual deployment required (runner is not a swarm manager)" >> $GITHUB_STEP_SUMMARY
+        fi
