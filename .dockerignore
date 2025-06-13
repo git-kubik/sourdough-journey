@@ -1,0 +1,50 @@
+# Git files
+.git
+.gitignore
+.github
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output (we'll rebuild in Docker)
+site/
+
+# Documentation and misc files
+*.md
+!docs/**/*.md
+LICENSE
+README.md
+CLAUDE.md
+claude-code-bug-report.md
+github-bug-report-template.md
+
+# Test files
+tests/
+*.test.py
+*_test.py
+
+# Temporary files
+*.tmp
+*.temp
+*.log
