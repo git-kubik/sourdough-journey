@@ -1,0 +1,67 @@
+/* Custom styling for MaK's Sourdough Journey */
+
+/* Add subtle bread-themed styling */
+.md-header {
+  background: linear-gradient(135deg, #8d6e63 0%, #a1887f 100%);
+}
+
+/* Enhance hero section */
+.md-typeset h1 {
+  color: #8d6e63;
+  font-weight: 600;
+}
+
+/* Style blockquotes to look like recipe cards */
+.md-typeset blockquote {
+  border-left: 4px solid #ffb74d;
+  background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add warmth to code blocks */
+.md-typeset .highlight {
+  background: #f5f5f5;
+  border-radius: 6px;
+  border-left: 3px solid #8d6e63;
+}
+
+/* Style admonitions with bread theme */
+.md-typeset .admonition.tip {
+  border-color: #ffb74d;
+}
+
+.md-typeset .admonition.tip > .admonition-title {
+  background-color: rgba(255, 183, 77, 0.1);
+}
+
+/* Add hover effects to navigation */
+.md-nav__link:hover {
+  color: #8d6e63 !important;
+  transition: color 0.2s ease;
+}
+
+/* Style tables for recipe ingredients */
+.md-typeset table:not([class]) {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: linear-gradient(135deg, #8d6e63 0%, #a1887f 100%);
+  color: white;
+  font-weight: 600;
+}
+
+/* Subtle animation for temperature and time callouts */
+.md-typeset strong {
+  color: #8d6e63;
+  font-weight: 600;
+}
+
+/* Add bread emoji styling */
+.twemoji {
+  vertical-align: -0.125em;
+}
