@@ -14,20 +14,11 @@ env:
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-      with:
-        # Allow insecure registries for private registry
-        config-inline: |
-          [registry."10.9.8.121:5000"]
-            http = true
-            insecure = true
     
     - name: Generate build metadata
       id: meta
@@ -45,18 +36,14 @@ jobs:
         echo "tags=${TAGS}" >> $GITHUB_OUTPUT
     
     - name: Build Docker image
-      uses: docker/build-push-action@v5
-      with:
-        context: .
-        push: false
-        tags: ${{ steps.meta.outputs.tags }}
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
-        outputs: type=docker,dest=/tmp/image.tar
-    
-    - name: Load and test image
       run: |
-        docker load < /tmp/image.tar
+        # Build the Docker image with all tags
+        for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
+          docker build -t "${tag}" .
+        done
+    
+    - name: Test image
+      run: |
         # Test that the image runs
         docker run --rm -d --name test-container -p 8080:80 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
         sleep 5
@@ -66,15 +53,12 @@ jobs:
     
     - name: Push to registry
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: docker/build-push-action@v5
-      with:
-        context: .
-        push: true
-        tags: ${{ steps.meta.outputs.tags }}
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
-        # Allow insecure registry
-        outputs: type=image,push=true,registry.insecure=true
+      run: |
+        # Push all tags to the registry
+        for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
+          echo "Pushing ${tag}..."
+          docker push "${tag}"
+        done
     
     - name: Output deployment info
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
