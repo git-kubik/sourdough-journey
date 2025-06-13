@@ -20,7 +20,7 @@ services:
         delay: 10s
         failure_action: rollback
     ports:
-      - "8080:80"
+      - "8081:80"
     networks:
       - sourdough-net
     healthcheck:

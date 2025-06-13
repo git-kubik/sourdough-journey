@@ -99,8 +99,8 @@ sudo docker stack rm sourdough
 ## Access the Documentation
 
 Once deployed, access the documentation at:
-- http://10.9.8.122:8080 (if deployed to worker-2)
-- http://<worker-ip>:8080 (depending on which worker it's deployed to)
+- http://10.9.8.122:8081 (if deployed to worker-2)
+- http://<worker-ip>:8081 (depending on which worker it's deployed to)
 
 ## Troubleshooting
 
