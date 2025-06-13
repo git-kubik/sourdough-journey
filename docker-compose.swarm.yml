@@ -3,13 +3,13 @@ version: '3.8'
 services:
   sourdough-docs:
     image: 10.9.8.121:5000/sourdough-docs:latest
+    secrets:
+      - registry-auth
     deploy:
       replicas: 1
       placement:
         constraints:
-          # Deploy to worker at 10.9.8.122 (adjust the constraint based on your setup)
-          # You can use node.id, node.hostname, or node.labels
-          # Run 'docker node ls' on the manager to see available nodes
+          # Deploy to workers that have registry access configured
           - node.role == worker
       restart_policy:
         condition: on-failure
@@ -34,3 +34,7 @@ networks:
   sourdough-net:
     driver: overlay
     attachable: true
+
+secrets:
+  registry-auth:
+    external: true

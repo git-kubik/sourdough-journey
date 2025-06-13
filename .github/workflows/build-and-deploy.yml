@@ -53,7 +53,13 @@ jobs:
     
     - name: Push to registry
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      env:
+        REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+        REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
       run: |
+        # Login to registry with credentials from GitHub secrets
+        echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
+        
         # Push all tags to the registry
         for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
           echo "Pushing ${tag}..."
@@ -78,7 +84,7 @@ jobs:
         elif ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=no ${SWARM_MANAGER} "echo 'Connected'" >/dev/null 2>&1; then
           echo "🚀 Deploying to Docker Swarm via SSH to manager..."
           scp docker-compose.swarm.yml ${SWARM_MANAGER}:/tmp/
-          ssh ${SWARM_MANAGER} "sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
+          ssh ${SWARM_MANAGER} "sudo /etc/docker/creds/login-registry.sh && sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
           echo "✅ Deployed to Swarm via remote manager"
         
         else

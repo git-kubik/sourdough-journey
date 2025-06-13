@@ -33,6 +33,10 @@ scp docker-compose.swarm.yml ${SWARM_MANAGER}:/tmp/docker-compose.swarm.yml
 # Deploy via SSH to the swarm manager
 echo "🔄 Deploying stack on Swarm manager..."
 ssh ${SWARM_MANAGER} << 'EOF'
+    # Secure login to registry
+    echo "🔐 Logging into registry..."
+    sudo /etc/docker/creds/login-registry.sh
+    
     # Pull the latest image
     echo "📦 Pulling latest image from registry..."
     sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
