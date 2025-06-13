@@ -6,7 +6,7 @@ A healthy, active starter is the foundation of great sourdough bread. After main
 
 ### 1. Predictable Doubling Time
 **What to look for:**
-- Doubles in volume within 4-8 hours at room temperature (70-75°F/21-24°C)
+- Doubles in volume within 4-8 hours at room temperature (21-24°C/70-75°F)
 - Consistent timing day after day
 - Peak activity occurs at roughly the same time after feeding
 
@@ -66,15 +66,15 @@ This tests your starter's vigor and predictability.
 ## Temperature and Timing Guide
 
 ### Optimal Temperatures:
-- **Feeding:** 70-75°F (21-24°C)
-- **Peak activity:** 75-80°F (24-27°C)
-- **Storage:** 38-40°F (3-4°C) for refrigerator
+- **Feeding:** 21-24°C (70-75°F)
+- **Peak activity:** 24-27°C (75-80°F)
+- **Storage:** 3-4°C (38-40°F) for refrigerator
 
 ### Timing by Temperature:
-- **65°F (18°C):** Peak in 8-12 hours
-- **70°F (21°C):** Peak in 6-8 hours
-- **75°F (24°C):** Peak in 4-6 hours
-- **80°F (27°C):** Peak in 3-4 hours
+- **18°C (65°F):** Peak in 8-12 hours
+- **21°C (70°F):** Peak in 6-8 hours
+- **24°C (75°F):** Peak in 4-6 hours
+- **27°C (80°F):** Peak in 3-4 hours
 
 ## Feeding Ratios and Their Effects
 
@@ -137,7 +137,7 @@ This tests your starter's vigor and predictability.
 
 ### 12 Hours Before Baking:
 1. Give vigorous feeding (1:5:5 ratio)
-2. Maintain at 75°F if possible
+2. Maintain at 24°C (75°F) if possible
 3. Plan for peak activity timing
 
 ### Testing Peak Activity:
@@ -183,7 +183,7 @@ Before using your starter for baking, confirm:
 - [ ] Domed or slightly flat top (not sunken)
 - [ ] Fed within last 12 hours
 - [ ] At or just before peak activity
-- [ ] Correct temperature (70-80°F)
+- [ ] Correct temperature (21-27°C/70-80°F)
 
 ## Emergency Fixes
 
@@ -195,8 +195,8 @@ Before using your starter for baking, confirm:
 5. Should recover full activity
 
 ### Quick Activation:
-1. Feed 1:5:5 with warm water (85°F)
-2. Place in warm spot (80°F)
+1. Feed 1:5:5 with warm water (29°C/85°F)
+2. Place in warm spot (27°C/80°F)
 3. Should peak in 3-4 hours
 4. Use immediately at peak
 

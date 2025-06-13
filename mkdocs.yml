@@ -3,6 +3,8 @@ site_url: https://example.com
 site_description: Documenting my journey as a sourdough baker
 site_author: Sourdough Baker
 
+dev_addr: 0.0.0.0:5555
+
 theme:
   name: material
   features:

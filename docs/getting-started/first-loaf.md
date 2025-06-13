@@ -20,7 +20,7 @@ Welcome to your first sourdough baking adventure! This guide will walk you throu
 
 ### 8:00 PM (Previous Evening) - Feed Your Starter
 - Mix 30g starter + 30g flour + 30g water
-- Cover loosely and leave at room temperature (70-75°F/21-24°C)
+- Cover loosely and leave at room temperature (21-24°C/70-75°F)
 
 ### 7:00 AM - Starter Assessment
 Your starter should have doubled or tripled in size and pass the float test:
@@ -42,7 +42,7 @@ Your starter should have doubled or tripled in size and pass the float test:
 5. Mix again using pinch and fold method until smooth (5-7 minutes)
 
 ### 9:30 AM - Begin Bulk Fermentation
-Temperature: 75-78°F (24-26°C)
+Temperature: 24-26°C (75-78°F)
 Duration: 4-5 hours total
 
 ### 10:00 AM - First Fold
@@ -82,15 +82,15 @@ After this fold, let dough rest undisturbed until ready.
 Place in refrigerator for 12-48 hours (overnight is perfect)
 
 ### Next Day 7:00 AM - Prepare for Baking
-1. Place Dutch oven in oven, preheat to 475°F (245°C) for 45 minutes
+1. Place Dutch oven in oven, preheat to 245°C (475°F) for 45 minutes
 2. Cut parchment paper to fit
 
 ### 7:45 AM - Score and Bake
 1. Turn dough onto parchment
 2. Score with sharp blade (1/2 inch deep)
 3. Transfer to hot Dutch oven
-4. Bake covered: 20 minutes at 475°F
-5. Remove lid, reduce to 450°F (230°C)
+4. Bake covered: 20 minutes at 245°C (475°F)
+5. Remove lid, reduce to 230°C (450°F)
 6. Bake uncovered: 20-25 minutes until deep golden brown
 
 ### 8:30 AM - Cool
@@ -192,7 +192,7 @@ Let cool on wire rack for at least 1 hour before slicing.
 
 **Solutions:**
 - Extend bulk fermentation
-- Check internal temp (205-210°F/96-99°C)
+- Check internal temp (96-99°C/205-210°F)
 - Cool completely before cutting
 
 ### Issue: Flat Loaf, No Oven Spring
@@ -247,7 +247,7 @@ Stretch small piece of dough:
 
 ## Final Tips for Success
 
-1. **Temperature matters:** Use a thermometer to track dough temp (aim for 75-78°F)
+1. **Temperature matters:** Use a thermometer to track dough temp (aim for 24-26°C/75-78°F)
 2. **Be patient:** Good fermentation can't be rushed
 3. **Take notes:** Record times and temperatures for future reference
 4. **Trust the process:** Each step builds on the previous

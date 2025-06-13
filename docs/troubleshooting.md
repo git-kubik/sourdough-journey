@@ -12,7 +12,7 @@ Even experienced bakers encounter challenges. This comprehensive guide addresses
 
 **Causes & Solutions:**
 1. **Temperature too low**
-   - Move to warmer spot (75-80°F)
+   - Move to warmer spot (24-27°C/75-80°F)
    - Use warm water for feeding
    - Create proofing box with light bulb
 
@@ -38,7 +38,7 @@ Even experienced bakers encounter challenges. This comprehensive guide addresses
 
 **Solutions:**
 - Feed twice daily at 1:5:5 ratio
-- Keep at cooler temperature (70°F)
+- Keep at cooler temperature (21°C/70°F)
 - Use less whole grain flour
 - Stir down hooch before feeding
 
@@ -105,7 +105,7 @@ Even experienced bakers encounter challenges. This comprehensive guide addresses
 
 **Solutions:**
 - Extend bulk fermentation
-- Increase temperature to 78°F
+- Increase temperature to 26°C (78°F)
 - Use more starter (25%)
 - Check starter activity
 - Do poke test before shaping
@@ -214,7 +214,7 @@ Even experienced bakers encounter challenges. This comprehensive guide addresses
 - Under-fermented
 
 **Solutions:**
-- Bake to 205-210°F internal temp
+- Bake to 96-99°C (205-210°F) internal temp
 - Cool completely (2+ hours)
 - Extend fermentation
 - Bake darker crust
@@ -237,7 +237,7 @@ Even experienced bakers encounter challenges. This comprehensive guide addresses
 - Increase temperature
 - Bake longer uncovered
 - Remove lid after 20 min
-- Final 5 min at 475°F
+- Final 5 min at 245°C (475°F)
 
 ## Crumb Issues
 

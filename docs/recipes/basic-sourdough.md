@@ -42,7 +42,7 @@ Pre-shape into round, rest, then final shape into boule or batard.
 Proof seam-side up in banneton in refrigerator overnight.
 
 ### 6. Bake
-Score and bake in preheated Dutch oven: 20 min covered at 475°F, then 20-25 min uncovered at 450°F.
+Score and bake in preheated Dutch oven: 20 min covered at 245°C (475°F), then 20-25 min uncovered at 230°C (450°F).
 
 ## Recipe Notes
 
