@@ -35,11 +35,11 @@ echo "🔄 Deploying stack on Swarm manager..."
 ssh ${SWARM_MANAGER} << 'EOF'
     # Pull the latest image
     echo "📦 Pulling latest image from registry..."
-    docker pull 10.9.8.121:5000/sourdough-docs:latest
+    sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
     
     # Deploy the stack
     echo "🚀 Deploying stack..."
-    docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough
+    sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough
     
     # Wait for service to be ready
     sleep 10
@@ -47,9 +47,9 @@ ssh ${SWARM_MANAGER} << 'EOF'
     # Check service status
     echo ""
     echo "📊 Service status:"
-    docker service ls | grep sourdough
+    sudo docker service ls | grep sourdough
     echo ""
-    docker service ps sourdough_sourdough-docs
+    sudo docker service ps sourdough_sourdough-docs
     
     # Clean up temp file
     rm /tmp/docker-compose.swarm.yml
@@ -63,5 +63,5 @@ echo "   http://10.9.8.122:8080 (or the actual IP of swarm-worker-2)"
 echo ""
 echo "📝 To manage the service, SSH to the Swarm manager:"
 echo "   ssh ${SWARM_MANAGER}"
-echo "   docker service logs ${SERVICE_NAME}"
-echo "   docker service ps ${SERVICE_NAME}"
+echo "   sudo docker service logs ${SERVICE_NAME}"
+echo "   sudo docker service ps ${SERVICE_NAME}"

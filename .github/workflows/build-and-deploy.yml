@@ -78,7 +78,7 @@ jobs:
         elif ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=no ${SWARM_MANAGER} "echo 'Connected'" >/dev/null 2>&1; then
           echo "🚀 Deploying to Docker Swarm via SSH to manager..."
           scp docker-compose.swarm.yml ${SWARM_MANAGER}:/tmp/
-          ssh ${SWARM_MANAGER} "docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
+          ssh ${SWARM_MANAGER} "sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
           echo "✅ Deployed to Swarm via remote manager"
         
         else

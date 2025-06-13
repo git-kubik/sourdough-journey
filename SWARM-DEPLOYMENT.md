@@ -27,10 +27,10 @@ Run from any machine with SSH access to the Swarm manager:
 SSH to the Swarm manager and run:
 ```bash
 # Pull the latest image
-docker pull 10.9.8.121:5000/sourdough-docs:latest
+sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
 
 # Deploy the stack
-docker stack deploy -c docker-compose.swarm.yml sourdough
+sudo docker stack deploy -c docker-compose.swarm.yml sourdough
 ```
 
 ## Targeting Specific Worker Nodes
@@ -41,10 +41,10 @@ To deploy specifically to worker-2 (10.9.8.122), you have several options:
 On the Swarm manager (10.9.8.120):
 ```bash
 # List nodes to get IDs
-docker node ls
+sudo docker node ls
 
 # Label the worker nodes
-docker node update --label-add name=worker-2 <NODE_ID_FOR_10.9.8.122>
+sudo docker node update --label-add name=worker-2 <NODE_ID_FOR_10.9.8.122>
 ```
 
 Then update `docker-compose.swarm.yml`:
@@ -72,28 +72,28 @@ placement:
 
 ### Check Service Status
 ```bash
-docker service ls
-docker service ps sourdough_sourdough-docs
+sudo docker service ls
+sudo docker service ps sourdough_sourdough-docs
 ```
 
 ### View Logs
 ```bash
-docker service logs sourdough_sourdough-docs
+sudo docker service logs sourdough_sourdough-docs
 ```
 
 ### Update Service
 ```bash
-docker service update --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
+sudo docker service update --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
 ```
 
 ### Scale Service
 ```bash
-docker service scale sourdough_sourdough-docs=2
+sudo docker service scale sourdough_sourdough-docs=2
 ```
 
 ### Remove Service
 ```bash
-docker stack rm sourdough
+sudo docker stack rm sourdough
 ```
 
 ## Access the Documentation
@@ -107,17 +107,17 @@ Once deployed, access the documentation at:
 ### Service Not Starting
 1. Check if the image can be pulled:
    ```bash
-   docker pull 10.9.8.121:5000/sourdough-docs:latest
+   sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
    ```
 
 2. Check service logs:
    ```bash
-   docker service logs sourdough_sourdough-docs
+   sudo docker service logs sourdough_sourdough-docs
    ```
 
 3. Check node availability:
    ```bash
-   docker node ls
+   sudo docker node ls
    ```
 
 ### SSH Access Issues
