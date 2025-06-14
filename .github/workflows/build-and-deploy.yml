@@ -65,11 +65,6 @@ jobs:
           echo "Pushing ${tag}..."
           docker push "${tag}"
         done
-        
-        # Use a timestamp-based tag for guaranteed uniqueness
-        UNIQUE_TAG="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}"
-        echo "UNIQUE_IMAGE=${UNIQUE_TAG}" >> $GITHUB_ENV
-        echo "Unique image tag: ${UNIQUE_TAG}"
     
     - name: Deploy to Docker Swarm
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -79,11 +74,8 @@ jobs:
         
         echo "🚀 Deploying to Docker Swarm via SSH to manager..."
         
-        # Copy the swarm compose file to the manager and update image tag
+        # Copy the swarm compose file to the manager
         scp docker-compose.swarm.yml m@${SWARM_MANAGER}:/tmp/
-        
-        # Update compose file to use unique image tag
-        ssh m@${SWARM_MANAGER} "sed -i 's|image: 10.9.8.121:5000/sourdough-docs:latest|image: ${UNIQUE_IMAGE}|' /tmp/docker-compose.swarm.yml"
         
         # Update the service to use the new image
         ssh m@${SWARM_MANAGER} << EOF
@@ -92,11 +84,10 @@ jobs:
           
           # Check if stack exists
           if sudo docker stack ls | grep -q sourdough; then
-            echo "Updating existing stack..."
+            echo "Updating existing service with latest image..."
             
-            # Update service with unique timestamped image to force pull
-            echo "Updating service with unique image: ${UNIQUE_IMAGE}"
-            sudo docker service update --force --with-registry-auth --image "${UNIQUE_IMAGE}" sourdough_sourdough-docs
+            # Update service with proper registry auth - should detect updated :latest
+            sudo docker service update --with-registry-auth --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
           else
             echo "Deploying new stack..."
             sudo docker stack deploy --with-registry-auth -c /tmp/docker-compose.swarm.yml sourdough
