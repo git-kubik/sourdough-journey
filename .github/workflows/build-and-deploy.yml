@@ -60,11 +60,16 @@ jobs:
         # Login to registry with credentials from GitHub secrets
         echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
         
-        # Push all tags to the registry
+        # Push all tags to the registry and capture digest
         for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
           echo "Pushing ${tag}..."
           docker push "${tag}"
         done
+        
+        # Get the digest of the latest image for deployment
+        IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest)
+        echo "IMAGE_DIGEST=${IMAGE_DIGEST}" >> $GITHUB_ENV
+        echo "Pushed image digest: ${IMAGE_DIGEST}"
     
     - name: Deploy to Docker Swarm
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -78,27 +83,20 @@ jobs:
         scp docker-compose.swarm.yml m@${SWARM_MANAGER}:/tmp/
         
         # Update the service to use the new image
-        ssh m@${SWARM_MANAGER} << 'EOF'
+        ssh m@${SWARM_MANAGER} << EOF
           # Login to registry
           sudo /etc/docker/creds/login-registry.sh
           
           # Check if stack exists
           if sudo docker stack ls | grep -q sourdough; then
             echo "Updating existing stack..."
-            # Pull the latest image on all nodes
-            for node in $(sudo docker node ls --format "{{.Hostname}}"); do
-              echo "Pulling latest image on $node..."
-              if [ "$node" = "$(hostname)" ]; then
-                sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
-              else
-                ssh $node "sudo docker pull 10.9.8.121:5000/sourdough-docs:latest" || true
-              fi
-            done
-            # Force update the service to use the new image
-            sudo docker service update --force --with-registry-auth --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
+            
+            # Update service with exact image digest to force pull
+            echo "Updating service with image digest: ${IMAGE_DIGEST}"
+            sudo docker service update --force --with-registry-auth --image "${IMAGE_DIGEST}" sourdough_sourdough-docs
           else
             echo "Deploying new stack..."
-            sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough
+            sudo docker stack deploy --with-registry-auth -c /tmp/docker-compose.swarm.yml sourdough
           fi
           
           # Clean up
@@ -117,7 +115,7 @@ jobs:
           else
             echo "⚠️ Service may still be updating, check status manually"
           fi
-        EOF
+EOF
         
         echo "✅ Deployed to Swarm via remote manager"
     

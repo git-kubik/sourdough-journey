@@ -20,6 +20,9 @@ services:
         delay: 10s
         failure_action: rollback
         order: stop-first
+        monitor: 60s
+      labels:
+        - "com.docker.compose.service=sourdough-docs"
     ports:
       - "8081:80"
     networks:
