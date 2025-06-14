@@ -57,6 +57,10 @@ jobs:
         REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
         REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
       run: |
+        # Configure Docker to use HTTP for insecure registry
+        echo '{"insecure-registries": ["10.9.8.121:5000"]}' | sudo tee /etc/docker/daemon.json
+        sudo systemctl reload docker
+        
         # Login to registry with credentials from GitHub secrets
         echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
         
@@ -79,6 +83,14 @@ jobs:
         
         # Update the service to use the new image
         ssh m@${SWARM_MANAGER} << EOF
+          # Ensure insecure registry is configured
+          if ! grep -q "10.9.8.121:5000" /etc/docker/daemon.json 2>/dev/null; then
+            echo "Configuring insecure registry..."
+            echo '{"insecure-registries": ["10.9.8.121:5000"]}' | sudo tee /etc/docker/daemon.json
+            sudo systemctl reload docker
+            sleep 3
+          fi
+          
           # Login to registry
           sudo /etc/docker/creds/login-registry.sh
           
