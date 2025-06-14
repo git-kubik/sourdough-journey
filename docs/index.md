@@ -14,6 +14,9 @@ Welcome to MaK's personal documentation of learning and mastering the art of sou
 ### 🛠️ Techniques
 - **[Folding & Shaping](techniques/folding-shaping.md)**: Master the essential techniques for structure and form
 
+### 🧮 Tools
+- **[Ingredient Calculator](tools/calculator.md)**: Calculate precise measurements for any loaf size
+
 ### 🔍 Troubleshooting
 - **[Common Issues](troubleshooting.md)**: Solutions to the most frequent sourdough challenges
 

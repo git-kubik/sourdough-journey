@@ -73,6 +73,8 @@ nav:
     - Basic Sourdough: recipes/basic-sourdough.md
   - Techniques:
     - Folding & Shaping: techniques/folding-shaping.md
+  - Tools:
+    - Ingredient Calculator: tools/calculator.md
   - Troubleshooting: troubleshooting.md
 
 plugins:
