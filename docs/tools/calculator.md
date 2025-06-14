@@ -338,7 +338,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
   
   .input-group input {
     width: 100%;
-    max-width: 50px;
+    max-width: 100px;
     margin: 0 auto;
   }
   
