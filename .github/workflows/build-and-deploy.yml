@@ -57,10 +57,6 @@ jobs:
         REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
         REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
       run: |
-        # Configure Docker to use HTTP for insecure registry
-        echo '{"insecure-registries": ["10.9.8.121:5000"]}' | sudo tee /etc/docker/daemon.json
-        sudo systemctl reload docker
-        
         # Login to registry with credentials from GitHub secrets
         echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
         
@@ -83,25 +79,55 @@ jobs:
         
         # Update the service to use the new image
         ssh m@${SWARM_MANAGER} << EOF
-          # Ensure insecure registry is configured
-          if ! grep -q "10.9.8.121:5000" /etc/docker/daemon.json 2>/dev/null; then
-            echo "Configuring insecure registry..."
-            echo '{"insecure-registries": ["10.9.8.121:5000"]}' | sudo tee /etc/docker/daemon.json
-            sudo systemctl reload docker
-            sleep 3
-          fi
+          set -e  # Exit on any error
+          
+          echo "🔧 Docker Swarm deployment starting..."
           
           # Login to registry
+          echo "📋 Logging into registry..."
           sudo /etc/docker/creds/login-registry.sh
+          
+          # Show current state before update
+          echo "📊 Current service state:"
+          sudo docker service ls | grep sourdough || echo "No sourdough services found"
           
           # Check if stack exists
           if sudo docker stack ls | grep -q sourdough; then
-            echo "Updating existing service with latest image..."
+            echo "🔄 Stack exists - updating service..."
             
-            # Update service with proper registry auth - should detect updated :latest
-            sudo docker service update --with-registry-auth --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
+            # Show current image being used
+            echo "📋 Current service image:"
+            sudo docker service inspect sourdough_sourdough-docs --format '{{.Spec.TaskTemplate.ContainerSpec.Image}}' || echo "Failed to get current image"
+            
+            # Force pull latest image on manager before update
+            echo "📥 Pulling latest image on manager..."
+            sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
+            
+            # Update service with force flag and proper registry auth
+            echo "🚀 Executing service update command..."
+            sudo docker service update \
+              --with-registry-auth \
+              --force \
+              --image 10.9.8.121:5000/sourdough-docs:latest \
+              sourdough_sourdough-docs
+            
+            echo "✅ Service update command completed - waiting for rollout..."
+            
+            # Wait and show update progress
+            for i in {1..30}; do
+              sleep 2
+              echo "⏳ Update progress (${i}/30):"
+              sudo docker service ps sourdough_sourdough-docs --no-trunc --format "table {{.Name}}\t{{.Image}}\t{{.CurrentState}}\t{{.Error}}" | head -3
+              
+              # Check if update is complete
+              if sudo docker service ps sourdough_sourdough-docs --filter desired-state=running --format "{{.CurrentState}}" | grep -q "Running"; then
+                echo "✅ Service successfully updated and running"
+                break
+              fi
+            done
+            
           else
-            echo "Deploying new stack..."
+            echo "🚀 No existing stack - deploying new..."
             sudo docker stack deploy --with-registry-auth -c /tmp/docker-compose.swarm.yml sourdough
           fi
           
