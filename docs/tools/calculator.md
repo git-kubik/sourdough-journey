@@ -193,7 +193,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 .input-group {
   margin-bottom: 0.375rem;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr 80px auto;
   align-items: center;
   gap: 0.25rem;
 }
@@ -334,6 +334,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
   .input-group {
     grid-template-columns: 1fr;
     text-align: center;
+    justify-items: center;
   }
   
   .input-group input {
