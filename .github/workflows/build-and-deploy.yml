@@ -85,8 +85,17 @@ jobs:
           # Check if stack exists
           if sudo docker stack ls | grep -q sourdough; then
             echo "Updating existing stack..."
-            # Force update the service to pull the latest image
-            sudo docker service update --force --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
+            # Pull the latest image on all nodes
+            for node in $(sudo docker node ls --format "{{.Hostname}}"); do
+              echo "Pulling latest image on $node..."
+              if [ "$node" = "$(hostname)" ]; then
+                sudo docker pull 10.9.8.121:5000/sourdough-docs:latest
+              else
+                ssh $node "sudo docker pull 10.9.8.121:5000/sourdough-docs:latest" || true
+              fi
+            done
+            # Force update the service to use the new image
+            sudo docker service update --force --with-registry-auth --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
           else
             echo "Deploying new stack..."
             sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough
@@ -95,9 +104,19 @@ jobs:
           # Clean up
           rm /tmp/docker-compose.swarm.yml
           
-          # Show service status
-          sleep 5
-          sudo docker service ps sourdough_sourdough-docs --no-trunc
+          # Wait for service to stabilize
+          echo "Waiting for service to update..."
+          sleep 10
+          
+          # Verify deployment
+          sudo docker service ps sourdough_sourdough-docs --no-trunc | head -5
+          
+          # Check if service is running
+          if sudo docker service ls | grep -q "sourdough_sourdough-docs.*1/1"; then
+            echo "✅ Service successfully updated and running"
+          else
+            echo "⚠️ Service may still be updating, check status manually"
+          fi
         EOF
         
         echo "✅ Deployed to Swarm via remote manager"
