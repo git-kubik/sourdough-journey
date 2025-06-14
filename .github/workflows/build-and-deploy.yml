@@ -60,16 +60,16 @@ jobs:
         # Login to registry with credentials from GitHub secrets
         echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
         
-        # Push all tags to the registry and capture digest
+        # Push all tags to the registry
         for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
           echo "Pushing ${tag}..."
           docker push "${tag}"
         done
         
-        # Get the digest of the latest image for deployment
-        IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest)
-        echo "IMAGE_DIGEST=${IMAGE_DIGEST}" >> $GITHUB_ENV
-        echo "Pushed image digest: ${IMAGE_DIGEST}"
+        # Use a timestamp-based tag for guaranteed uniqueness
+        UNIQUE_TAG="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}"
+        echo "UNIQUE_IMAGE=${UNIQUE_TAG}" >> $GITHUB_ENV
+        echo "Unique image tag: ${UNIQUE_TAG}"
     
     - name: Deploy to Docker Swarm
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -79,8 +79,11 @@ jobs:
         
         echo "🚀 Deploying to Docker Swarm via SSH to manager..."
         
-        # Copy the swarm compose file to the manager
+        # Copy the swarm compose file to the manager and update image tag
         scp docker-compose.swarm.yml m@${SWARM_MANAGER}:/tmp/
+        
+        # Update compose file to use unique image tag
+        ssh m@${SWARM_MANAGER} "sed -i 's|image: 10.9.8.121:5000/sourdough-docs:latest|image: ${UNIQUE_IMAGE}|' /tmp/docker-compose.swarm.yml"
         
         # Update the service to use the new image
         ssh m@${SWARM_MANAGER} << EOF
@@ -91,9 +94,9 @@ jobs:
           if sudo docker stack ls | grep -q sourdough; then
             echo "Updating existing stack..."
             
-            # Update service with exact image digest to force pull
-            echo "Updating service with image digest: ${IMAGE_DIGEST}"
-            sudo docker service update --force --with-registry-auth --image "${IMAGE_DIGEST}" sourdough_sourdough-docs
+            # Update service with unique timestamped image to force pull
+            echo "Updating service with unique image: ${UNIQUE_IMAGE}"
+            sudo docker service update --force --with-registry-auth --image "${UNIQUE_IMAGE}" sourdough_sourdough-docs
           else
             echo "Deploying new stack..."
             sudo docker stack deploy --with-registry-auth -c /tmp/docker-compose.swarm.yml sourdough
