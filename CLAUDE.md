@@ -1,0 +1,2 @@
+- always use metric and centigrade temperatures
+- discover all mcp servers available and use the tools when required
