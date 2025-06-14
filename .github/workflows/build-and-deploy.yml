@@ -115,7 +115,7 @@ jobs:
           else
             echo "⚠️ Service may still be updating, check status manually"
           fi
-EOF
+        EOF
         
         echo "✅ Deployed to Swarm via remote manager"
     
