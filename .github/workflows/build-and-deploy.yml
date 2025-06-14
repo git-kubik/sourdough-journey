@@ -69,28 +69,38 @@ jobs:
     - name: Deploy to Docker Swarm
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
-        # Check if we can deploy to swarm
+        # Deploy to swarm via SSH
         SWARM_MANAGER="10.9.8.120"
         
-        # Option 1: If this runner is the swarm manager
-        if docker node ls >/dev/null 2>&1; then
-          echo "🚀 Deploying to Docker Swarm (local manager)..."
-          docker stack deploy -c docker-compose.swarm.yml sourdough
-          sleep 10
-          docker service ls | grep sourdough
-          docker service ps sourdough_sourdough-docs
+        echo "🚀 Deploying to Docker Swarm via SSH to manager..."
         
-        # Option 2: If we can SSH to the swarm manager
-        elif ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=no ${SWARM_MANAGER} "echo 'Connected'" >/dev/null 2>&1; then
-          echo "🚀 Deploying to Docker Swarm via SSH to manager..."
-          scp docker-compose.swarm.yml ${SWARM_MANAGER}:/tmp/
-          ssh ${SWARM_MANAGER} "sudo /etc/docker/creds/login-registry.sh && sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough && rm /tmp/docker-compose.swarm.yml"
-          echo "✅ Deployed to Swarm via remote manager"
+        # Copy the swarm compose file to the manager
+        scp docker-compose.swarm.yml m@${SWARM_MANAGER}:/tmp/
         
-        else
-          echo "⚠️ Cannot deploy to Swarm automatically. Manual deployment required."
-          echo "Run: ./scripts/deploy-to-swarm-remote.sh"
-        fi
+        # Update the service to use the new image
+        ssh m@${SWARM_MANAGER} << 'EOF'
+          # Login to registry
+          sudo /etc/docker/creds/login-registry.sh
+          
+          # Check if stack exists
+          if sudo docker stack ls | grep -q sourdough; then
+            echo "Updating existing stack..."
+            # Force update the service to pull the latest image
+            sudo docker service update --force --image 10.9.8.121:5000/sourdough-docs:latest sourdough_sourdough-docs
+          else
+            echo "Deploying new stack..."
+            sudo docker stack deploy -c /tmp/docker-compose.swarm.yml sourdough
+          fi
+          
+          # Clean up
+          rm /tmp/docker-compose.swarm.yml
+          
+          # Show service status
+          sleep 5
+          sudo docker service ps sourdough_sourdough-docs --no-trunc
+        EOF
+        
+        echo "✅ Deployed to Swarm via remote manager"
     
     - name: Output deployment info
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -106,9 +116,5 @@ jobs:
         echo "docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" >> $GITHUB_STEP_SUMMARY
         echo '```' >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
-        if docker node ls >/dev/null 2>&1; then
-          echo "**Swarm Deployment:** ✅ Deployed to swarm-worker-2" >> $GITHUB_STEP_SUMMARY
-          echo "**Access URL:** http://swarm-worker-2:8081" >> $GITHUB_STEP_SUMMARY
-        else
-          echo "**Swarm Deployment:** ⚠️ Manual deployment required (runner is not a swarm manager)" >> $GITHUB_STEP_SUMMARY
-        fi
+        echo "**Swarm Deployment:** ✅ Deployed to swarm-worker-2" >> $GITHUB_STEP_SUMMARY
+        echo "**Access URL:** http://10.9.8.122:8081" >> $GITHUB_STEP_SUMMARY
