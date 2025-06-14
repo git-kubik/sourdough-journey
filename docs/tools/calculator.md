@@ -171,46 +171,47 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 <style>
 .calculator-container {
   display: grid;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .calculator-card, .results-card, .baker-percentages {
   background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(141, 110, 99, 0.1);
+  border-radius: 3px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 3px rgba(141, 110, 99, 0.1);
   border: 1px solid rgba(255, 183, 77, 0.2);
 }
 
 .calculator-card h2, .results-card h2 {
   color: #8d6e63;
   margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.375rem;
+  font-size: 0.875rem;
 }
 
 .input-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.375rem;
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: 1rem;
+  gap: 0.25rem;
 }
 
 .input-group label {
   font-weight: 600;
   color: #5d4037;
+  font-size: 0.75rem;
 }
 
 .input-group input {
-  padding: 0.75rem 1rem;
-  border: 2px solid #ffb74d;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  padding: 0.1875rem 0.25rem;
+  border: 1px solid #ffb74d;
+  border-radius: 2px;
+  font-size: 0.7rem;
   font-weight: 600;
   text-align: center;
-  width: 120px;
+  width: 30px;
   transition: all 0.3s ease;
 }
 
@@ -223,22 +224,22 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 .unit {
   font-weight: 600;
   color: #8d6e63;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
 }
 
 .ingredient-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.1875rem;
 }
 
 .ingredient-row {
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  padding: 0.75rem;
+  padding: 0.1875rem;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
+  border-radius: 2px;
   transition: background 0.2s ease;
 }
 
@@ -249,27 +250,29 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 .ingredient-name {
   font-weight: 500;
   color: #5d4037;
+  font-size: 0.7rem;
 }
 
 .ingredient-amount {
-  font-size: 1.2rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #8d6e63;
   text-align: right;
-  min-width: 60px;
+  min-width: 15px;
 }
 
 .ingredient-unit {
   color: #8d6e63;
   font-weight: 600;
-  margin-left: 0.5rem;
+  margin-left: 0.125rem;
+  font-size: 0.7rem;
 }
 
 .total-flour, .total-dough {
   background: linear-gradient(135deg, #ffb74d 0%, #ffa726 100%) !important;
   color: white;
   font-weight: 700;
-  margin-top: 0.5rem;
+  margin-top: 0.125rem;
 }
 
 .total-flour .ingredient-name,
@@ -282,45 +285,46 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 }
 
 .baker-percentages {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .baker-percentages h3 {
   color: #8d6e63;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.125rem;
+  font-size: 0.75rem;
 }
 
 .percentage-info {
   color: #795548;
   font-style: italic;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.375rem;
+  font-size: 0.625rem;
 }
 
 .percentage-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(37.5px, 1fr));
+  gap: 0.25rem;
 }
 
 .percentage-item {
   background: white;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 0.25rem;
+  border-radius: 2px;
   text-align: center;
   border: 1px solid rgba(141, 110, 99, 0.2);
 }
 
 .percentage-label {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.625rem;
   color: #795548;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.125rem;
 }
 
 .percentage-value {
   display: block;
-  font-size: 1.4rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #8d6e63;
 }
@@ -334,7 +338,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
   
   .input-group input {
     width: 100%;
-    max-width: 200px;
+    max-width: 50px;
     margin: 0 auto;
   }
   
