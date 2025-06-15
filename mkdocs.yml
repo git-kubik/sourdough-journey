@@ -93,6 +93,7 @@ nav:
     - ADR-005 Private Docker Registry: architecture/adr-005-private-docker-registry.md
     - ADR-006 Self-Hosted GitHub Runner: architecture/adr-006-self-hosted-github-runner.md
     - ADR-007 Document Frontmatter Standards: architecture/adr-007-document-frontmatter-standards.md
+    - Implementation Plan - Baker Features: architecture/implementation-plan-baker-features.md
   - Blog:
     - Blog Home: blog/index.md
     - Grains Series:

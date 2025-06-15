@@ -36,6 +36,11 @@ We use a simple format for our ADRs:
 - [ADR-006: Self-Hosted GitHub Runner](adr-006-self-hosted-github-runner.md)
 - [ADR-007: Document Frontmatter Standards](adr-007-document-frontmatter-standards.md)
 
+## Implementation Plans
+
+### Current Plans
+- [Baker Features Implementation Plan](implementation-plan-baker-features.md) - 5 expert-recommended features to enhance the baking experience
+
 ## Contributing
 
 When making significant architectural decisions:

@@ -16,3 +16,6 @@ site/
 # Local files
 claude-code-bug-report.md
 github-bug-report-template.md
+
+# Cruft directory - obsolete/temporary files
+cruft/
