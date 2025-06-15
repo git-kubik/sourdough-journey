@@ -193,7 +193,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 .input-group {
   margin-bottom: 0.375rem;
   display: grid;
-  grid-template-columns: 1fr 80px auto;
+  grid-template-columns: 1fr 95px auto;
   align-items: center;
   gap: 0.25rem;
 }
@@ -211,7 +211,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
   font-size: 0.7rem;
   font-weight: 600;
   text-align: center;
-  width: 60px;
+  width: 75px;
   transition: all 0.3s ease;
 }
 
@@ -370,5 +370,5 @@ The calculator automatically:
 
 ---
 
-*"Precision in measurement is the foundation of consistency in baking. This calculator ensures your ratios are always perfect, no matter the size of your ambition."* — CodeCrust# Force deployment trigger
+*"Precision in measurement is the foundation of consistency in baking. This calculator ensures your ratios are always perfect, no matter the size of your ambition."* — CodeCrust# Force deployment trigger - cache bust v3
 
