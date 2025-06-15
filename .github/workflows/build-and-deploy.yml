@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  REGISTRY: 10.9.8.121:5000
+  REGISTRY: 10.9.8.122:5000
   IMAGE_NAME: sourdough-docs
 
 jobs:
@@ -57,8 +57,8 @@ jobs:
         REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
         REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
       run: |
-        # Login to registry with credentials from GitHub secrets
-        echo "${REGISTRY_PASSWORD}" | docker login --username "${REGISTRY_USERNAME}" --password-stdin 10.9.8.121:5000
+        # Login to registry using credentials from GitHub secrets
+        echo "${REGISTRY_PASSWORD}" | docker login ${{ env.REGISTRY }} -u "${REGISTRY_USERNAME}" --password-stdin
         
         # Push all tags to the registry
         for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
@@ -83,9 +83,9 @@ jobs:
           
           echo "🔧 Docker Swarm deployment starting..."
           
-          # Login to registry directly with HTTP protocol
-          echo "📋 Logging into registry..."
-          echo "WARNING: Skip broken registry login script - will use --with-registry-auth instead"
+          # Login to registry on manager (required for --with-registry-auth)
+          echo "📋 Logging into registry on manager..."
+          echo "${{ secrets.REGISTRY_PASSWORD }}" | sudo docker login ${{ env.REGISTRY }} -u "${{ secrets.REGISTRY_USERNAME }}" --password-stdin
           
           # Show current state before update
           echo "📊 Current service state:"
@@ -107,7 +107,7 @@ jobs:
             sudo docker service update \
               --with-registry-auth \
               --force \
-              --image 10.9.8.121:5000/sourdough-docs:latest \
+              --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
               sourdough_sourdough-docs
             
             echo "✅ Service update command completed - waiting for rollout..."
