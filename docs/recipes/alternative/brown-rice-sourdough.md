@@ -16,6 +16,7 @@ This recipe introduces the fundamentals of gluten-free sourdough using brown ric
 ## Why Brown Rice Works
 
 From our [rice in sourdough blog post](../../blog/posts/grains-series-part-4.md#rice-the-global-staple), **brown rice offers**:
+
 - **Nutritional Completeness**: Whole grain with bran and germ intact
 - **Mild Flavor**: Won't compete with sourdough tang
 - **Reliable Fermentation**: Establishes consistent starter cultures
@@ -24,6 +25,7 @@ From our [rice in sourdough blog post](../../blog/posts/grains-series-part-4.md#
 ## Understanding Gluten-Free Challenges
 
 **No Gluten Network**: Without gluten, we must create structure through:
+
 - **Binding agents**: Xanthan gum provides elasticity
 - **Proper hydration**: Different water absorption than wheat
 - **Support systems**: Pan baking for better structure
@@ -321,12 +323,14 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Equipment Considerations
 
 **Dedicated Gluten-Free**: To prevent cross-contamination for celiac concerns:
+
 - Separate mixing bowls and utensils
 - Dedicated proofing baskets
 - Clean work surfaces
 - Separate starter containers
 
 **Essential Tools**:
+
 - Kitchen scale (accuracy crucial for GF)
 - Stand mixer (helps with binding)
 - 9" loaf pan (structure support)
@@ -355,6 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ### Step 1: Gluten-Free Starter Preparation
 
 **Rice Starter Characteristics** (from [rice starter section](../../blog/posts/grains-series-part-4.md#rice-sourdough-techniques)):
+
 - Often takes 7-14 days to establish
 - May appear less active visually than wheat
 - Develops different aromatic profiles
@@ -406,17 +411,20 @@ document.addEventListener('DOMContentLoaded', function() {
 **Extended Timing**: Gluten-free often needs longer for flavor development.
 
 **Modified Process**:
+
 - **No traditional folds** - the batter won't hold shape
 - **Gentle stirring** every 3 hours to redistribute
 - **Cover tightly** to prevent surface drying
 - **Watch for bubbling** activity throughout
 
 **Fermentation Progression**:
+
 - **Hour 1**: Initial bubbling activity
 - **Hour 3**: More active, increased volume
 - **Hour 6**: 50-75% size increase, very bubbly
 
 **Readiness Signs**:
+
 - Significant increase in volume (50-75%)
 - Very active bubbling throughout
 - Light, airy texture
@@ -436,6 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
 **3-Hour Proof**: Gluten-free needs adequate time for final rise.
 
 **Visual Cues**:
+
 - Rises to about 1 inch above pan rim
 - Surface becomes more domed
 - Slight bounce when pan is gently tapped
@@ -448,6 +457,7 @@ document.addEventListener('DOMContentLoaded', function() {
 **Lower Temperature**: Gluten-free benefits from gentler, longer baking.
 
 **Baking Process**:
+
 1. **Preheat**: 375°F (190°C)
 2. **Optional scoring**: Single shallow slash down center
 3. **Steam**: Place pan of hot water on bottom rack for first 20 minutes
@@ -462,6 +472,7 @@ document.addEventListener('DOMContentLoaded', function() {
 **Extended Cooling Essential**: Cool in pan 15 minutes, then turn out onto wire rack.
 
 **Why Critical for Gluten-Free**:
+
 - Structure continues to set during cooling
 - Cutting too soon results in gummy texture
 - Cool completely (3-4 hours minimum) before slicing
@@ -489,11 +500,13 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Flavor Enhancement
 
 **Rice Flavor Profile**:
+
 - **Base**: Mild, slightly nutty
 - **Fermentation adds**: Tangy sourdough character
 - **Texture**: Tender, fine crumb
 
 **Enhancement Options**:
+
 - **Herb addition**: 2 tbsp dried herbs (rosemary, thyme)
 - **Seed topping**: Sesame or poppy seeds on surface
 - **Garlic option**: 2 cloves roasted garlic, mashed
@@ -502,6 +515,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Nutritional Benefits
 
 **Brown Rice Advantages** (from [rice nutrition](../../blog/posts/grains-series-part-4.md#rice-the-global-staple)):
+
 - **Complete nutrition**: Bran and germ included
 - **B vitamins**: Thiamine, niacin, B6
 - **Minerals**: Manganese, selenium, magnesium
@@ -518,16 +532,19 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Building Gluten-Free Skills
 
 **Next Steps in GF Baking**:
+
 1. **[Multi-Grain Gluten-Free Blend](multi-grain-gf-blend.md)** - More complex flavors
 2. **[Protein-Rich Quinoa Bread](protein-rich-quinoa-bread.md)** - Nutritional powerhouse
 3. **[Cornmeal Country Bread](cornmeal-country-bread.md)** - Traditional American flavors
 
 **Understanding the Science**:
+
 - Learn about [rice flour characteristics](../../blog/posts/grains-series-part-4.md#rice-flour-characteristics)
 - Explore [gluten-free binding systems](../../blog/posts/grains-series-part-4.md#alternative-structure-systems)
 - Study [fermentation without gluten](../../blog/posts/grains-series-part-4.md#fermentation-techniques-for-gluten-free-grains)
 
 **Cross-Contamination Prevention**:
+
 - Review [celiac considerations](../../blog/posts/grains-series-part-4.md#celiac-disease)
 - Understand [dedicated equipment needs](../../blog/posts/grains-series-part-4.md#special-dietary-considerations)
 

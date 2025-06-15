@@ -24,6 +24,7 @@ This exploration represents the frontier of sourdough baking—where ancient fer
 ### Understanding the Gluten Role
 
 Gluten provides several critical functions in traditional bread:
+
 - **Structure**: Creates the elastic network that holds gas bubbles
 - **Texture**: Provides chewiness and springiness
 - **Rise**: Enables dramatic volume increase during fermentation
@@ -86,6 +87,7 @@ Rice feeds half the world's population but is rarely associated with bread in We
 
 **Starter Development:**
 Rice starters establish differently than wheat:
+
 - Often take longer to develop (7-14 days)
 - May appear less active visually
 - Develop different aromatic profiles
@@ -93,6 +95,7 @@ Rice starters establish differently than wheat:
 
 **Hydration Management:**
 Rice flour behaves differently with water:
+
 - Start with lower hydration (60-70%)
 - Rice flour can become gummy with too much water
 - Gradual hydration addition works better
@@ -179,6 +182,7 @@ Traditional nixtamalization (treating corn with alkali) offers benefits for corn
 
 **Starter Development:**
 Corn starters can be very active:
+
 - Often establish quickly (5-10 days)
 - Create sweet, fruity aromas
 - May be more liquid than wheat starters
@@ -346,6 +350,7 @@ Quinoa, pronounced "KEEN-wah," is actually a seed rather than a grain, but it's 
 
 **Saponin Removal:**
 Raw quinoa contains bitter saponins that must be removed:
+
 - Rinse whole quinoa thoroughly before use
 - Some quinoa flour may retain slight bitterness
 - Pre-washing reduces off-flavors significantly
@@ -494,6 +499,7 @@ Sorghum is the fifth most important cereal grain globally, particularly valued f
 ### The Art of Combination
 
 Successful gluten-free sourdough usually requires blending multiple flours to achieve:
+
 - **Structural Balance**: Combining proteins and starches for best texture
 - **Flavor Complexity**: Multiple grains create more interesting tastes
 - **Nutritional Completeness**: Different grains provide varied nutrients
@@ -602,6 +608,7 @@ Without gluten, gluten-free breads need alternative binding agents:
 
 **Starter Establishment:**
 Gluten-free starters often establish differently:
+
 - May take longer to show activity (7-14 days)
 - Create different visual signs of readiness
 - Develop unique aromatic profiles
@@ -617,6 +624,7 @@ Gluten-free starters often establish differently:
 
 **Timing Differences:**
 Gluten-free doughs ferment differently:
+
 - May ferment faster due to simpler carbohydrates
 - Visual cues for doneness are different
 - Over-fermentation can be more problematic
@@ -632,6 +640,7 @@ Gluten-free doughs ferment differently:
 
 **Mixing Techniques:**
 Without gluten development:
+
 - Focus on thorough ingredient distribution
 - Avoid over-mixing, which can break down starches
 - Use folding techniques for gentleness
@@ -1031,6 +1040,7 @@ The future of sourdough lies not in any single grain, but in understanding and c
 ## Coming Next: Exploring Seasonal Ingredients and Techniques
 
 Stay tuned for future series exploring:
+
 - Seasonal fruit and vegetable inclusions
 - Regional sourdough traditions around the world  
 - Advanced fermentation techniques and timing

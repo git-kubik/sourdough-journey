@@ -42,6 +42,7 @@ To the Egyptians, bread was more than sustenance—it was sacred. The process of
 ### Archaeological Evidence
 
 Recent archaeological discoveries have revealed:
+
 - **Ancient starter pots** with remnants of wild yeast cultures
 - **Detailed hieroglyphic records** of baking processes
 - **Preserved bread loaves** found in tombs, some over 4,000 years old
@@ -56,6 +57,7 @@ While Egypt perfected sourdough, Mesopotamia (modern-day Iraq) was developing it
 Even in 1750 BCE, bread was so important that the Code of Hammurabi included specific laws about bakers and bread quality. Selling substandard bread could result in severe punishment—testament to how central fermented bread had become to civilization.
 
 ### Mesopotamian Contributions:
+
 - **Barley-based starters** adapted to local grains
 - **Beer-bread symbiosis** where beer brewing and bread making shared techniques
 - **Trade route distribution** that spread fermentation knowledge
@@ -66,6 +68,7 @@ Even in 1750 BCE, bread was so important that the Code of Hammurabi included spe
 The Greeks elevated sourdough from mere sustenance to philosophical contemplation. They were the first to truly study the science behind fermentation, even without understanding the microscopic world of yeasts.
 
 ### Greek Innovations:
+
 - **Systematic observation** of fermentation patterns
 - **Regional starter variations** adapted to local climates
 - **Integration with olive oil** creating richer, more complex flavors
@@ -80,6 +83,7 @@ During the ancient Olympics, athletes were sustained on specially prepared sourd
 Rome took sourdough to unprecedented scales. The Roman Empire's success was built, quite literally, on bread. The famous phrase "bread and circuses" reflected how central sourdough had become to maintaining social order.
 
 ### Roman Achievements:
+
 - **Mass production techniques** feeding millions of citizens
 - **Quality control systems** ensuring consistent bread across the empire
 - **Professional collegia** (guilds) that standardized practices
@@ -88,6 +92,7 @@ Rome took sourdough to unprecedented scales. The Roman Empire's success was buil
 ### The Collegia Pistorum
 
 Established around 168 BCE, the Collegia Pistorum (College of Bakers) was one of history's first professional baking organizations. These bakers:
+
 - Maintained secret starter cultures passed down through generations
 - Developed techniques for large-scale production
 - Created different types of bread for different social classes
@@ -112,16 +117,19 @@ What's remarkable about these ancient civilizations is how much they accomplishe
 As sourdough spread across the ancient world, regional variations began to emerge:
 
 ### Mediterranean Basin:
+
 - **Wheat-based cultures** with olive oil integration
 - **Herb and seed additions** for flavor complexity
 - **Island variations** using local wild yeasts
 
 ### Northern Europe:
+
 - **Rye-based starters** adapted to cooler climates
 - **Dense, hearty breads** suited to harsh winters
 - **Preservation techniques** for long-term storage
 
 ### Asia:
+
 - **Rice-based fermentations** in monsoon climates
 - **Integration with local grains** like millet and barley
 - **Unique flavor profiles** from regional wild yeast strains
@@ -154,6 +162,7 @@ Bread was often a communal activity, with shared ovens and knowledge exchange. T
 ## Archaeological Mysteries
 
 Many questions about ancient sourdough remain unanswered:
+
 - How did starter cultures survive long journeys across trade routes?
 - What specific wild yeast strains dominated different regions?
 - How did ancient bakers achieve such consistent results without modern tools?
@@ -175,6 +184,7 @@ In our next installment, we'll explore how sourdough evolved during the Medieval
 ## Coming Next: Part 2 - Medieval and Renaissance Sourdough
 
 Join us as we explore:
+
 - Monastic bread traditions and their preservation of ancient knowledge
 - The rise of European guild systems
 - Regional bread laws and regulations

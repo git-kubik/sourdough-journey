@@ -30,6 +30,7 @@ Rye contains proteins, but they don't form gluten the way wheat proteins do. Ins
 **Pentosans:** Complex carbohydrates that absorb enormous amounts of water and create gel-like structures
 
 This unique protein composition means:
+
 - Rye doughs are stickier and more difficult to handle
 - Less rise potential compared to wheat
 - Denser, more compact crumb structure
@@ -44,6 +45,7 @@ Rye contains high levels of enzymes, particularly:
 **Other enzymes:** Create rapid fermentation and flavor development
 
 These enzymes mean:
+
 - Rye ferments much faster than wheat
 - Over-fermentation happens quickly and dramatically
 - Sourness develops rapidly
@@ -409,6 +411,7 @@ In our next installment, we'll explore ancient and heritage grains—wheats and 
 ## Coming Next: Part 3 - Ancient and Heritage Grains
 
 Join us as we explore:
+
 - Einkorn, emmer, and spelt—the ancient wheats
 - Working with heritage grain characteristics
 - Flavor profiles and nutritional benefits
