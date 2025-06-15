@@ -75,6 +75,9 @@ nav:
     - Folding & Shaping: techniques/folding-shaping.md
   - Tools:
     - Ingredient Calculator: tools/calculator.md
+  - Blog:
+    - Blog Home: blog/index.md
+    - Setting Up CI/CD: blog/posts/cicd-journey.md
   - Troubleshooting: troubleshooting.md
 
 plugins:
