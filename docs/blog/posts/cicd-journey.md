@@ -10,14 +10,14 @@ What started as a simple documentation site for MaK's sourdough baking journey e
 
 Our deployment target was a Docker Swarm cluster with the following architecture:
 
-- **Swarm Manager**: 10.9.8.120
-- **Worker Nodes**: Including swarm-worker-2 (10.9.8.122)
-- **Private Docker Registry**: 10.9.8.122:5000
-- **Documentation Site**: Accessible at http://10.9.8.122:8081
+- **Swarm Manager**: Centralized control node
+- **Worker Nodes**: Multiple nodes for distributed deployment
+- **Private Docker Registry**: Self-hosted registry for container images
+- **Documentation Site**: Publicly accessible documentation
 
 ## Chapter 1: The Registry Migration
 
-Our first challenge came when we discovered the registry had moved from `10.9.8.121:5000` to `10.9.8.122:5000`. This seemingly simple change cascaded into multiple issues:
+Our first challenge came when we discovered the registry had moved to a different host. This seemingly simple change cascaded into multiple issues:
 
 ### The Problems
 
@@ -34,7 +34,7 @@ We systematically updated all references:
 # docker-compose.swarm.yml
 services:
   sourdough-docs:
-    image: 10.9.8.122:5000/sourdough-docs:latest  # Updated from 10.9.8.121
+    image: registry.example.com/sourdough-docs:latest  # Updated registry URL
 ```
 
 But the real insight came when we realized Docker Swarm workers need proper authentication forwarding.
@@ -49,10 +49,10 @@ The key breakthrough was understanding how Docker Swarm handles registry authent
 
 ```bash
 # On the swarm manager
-echo "admin123" | docker login 10.9.8.122:5000 -u admin --password-stdin
+echo "$REGISTRY_PASSWORD" | docker login $REGISTRY_URL -u $REGISTRY_USERNAME --password-stdin
 
 # Update service with authentication
-docker service update --with-registry-auth --image 10.9.8.122:5000/sourdough-docs:latest sourdough_sourdough-docs
+docker service update --with-registry-auth --image $REGISTRY_URL/sourdough-docs:latest sourdough_sourdough-docs
 ```
 
 ## Chapter 3: Creating the Test Framework
@@ -76,7 +76,7 @@ An intelligent script (`automated-registry-test.sh`) that:
 
 ```bash
 # Using environment variables for security
-REGISTRY_USERNAME=admin REGISTRY_PASSWORD=admin123 ./automated-registry-test.sh
+REGISTRY_USERNAME=myuser REGISTRY_PASSWORD=mypass ./automated-registry-test.sh
 ```
 
 ## Chapter 4: Securing the Pipeline
@@ -105,13 +105,13 @@ Instead of running the runner manually or as root, we created a systemd user ser
 ```ini
 # ~/.config/systemd/user/github-runner.service
 [Unit]
-Description=GitHub Actions Runner for sourdough-journey
+Description=GitHub Actions Runner
 After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/repos/sourdough/.github-runner
-ExecStart=/repos/sourdough/.github-runner/run.sh
+WorkingDirectory=/path/to/runner
+ExecStart=/path/to/runner/run.sh
 Restart=always
 RestartSec=10
 
