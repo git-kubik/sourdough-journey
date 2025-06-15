@@ -147,6 +147,7 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
 ### Food System Independence
 
 **Self-sufficiency benefits:**
+
 - **Starter longevity** - one culture can last generations
 - **Reduced food miles** - make bread at home
 - **Storage efficiency** - flour keeps longer than bread
