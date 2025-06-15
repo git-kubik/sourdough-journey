@@ -12,6 +12,11 @@ Welcome to the technical blog section of MaK's Sourdough Journey! Here, we docum
 
 ## Latest Posts
 
+### [Innovation Spotlight: The Circadian Loaf - Time-Responsive Sourdough](posts/circadian-loaf-innovation.md)
+*June 15, 2025*
+
+Introducing the world's first sourdough designed around your body's natural 24-hour rhythm. A revolutionary approach combining ancient fermentation wisdom with cutting-edge chrono-nutrition science for functional bread baking.
+
 ### [The Art of Bread Shapes: Part 4 - Functional Design and Purpose-Driven Forms](posts/loaves-series-part-4.md)
 *June 15, 2025*
 

@@ -110,6 +110,7 @@ nav:
       - "Part 1: Ancient Origins": blog/posts/sourdough-history-part-1.md
       - "Part 2: Medieval & Renaissance": blog/posts/sourdough-history-part-2.md
       - "Part 3: Industrial to Modern": blog/posts/sourdough-history-part-3.md
+    - Innovation Spotlight - Circadian Loaf: blog/posts/circadian-loaf-innovation.md
     - Setting Up CI/CD: blog/posts/cicd-journey.md
   - Troubleshooting: troubleshooting.md
 
