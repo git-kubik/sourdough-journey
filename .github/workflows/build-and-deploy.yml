@@ -13,8 +13,24 @@ env:
   IMAGE_NAME: sourdough-docs
 
 jobs:
+  lint-and-validate:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Lint Markdown files
+      uses: DavidAnson/markdownlint-cli2-action@v16
+      with:
+        globs: 'docs/**/*.md'
+        config: '.markdownlint.json'
+        fix: false
+        separator: '\n'
+
   build-and-push:
     runs-on: self-hosted
+    needs: lint-and-validate
     
     steps:
     - name: Checkout repository
