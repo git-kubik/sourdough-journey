@@ -67,8 +67,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-    - Your First Loaf: getting-started/first-loaf.md
+    - Why Sourdough?: getting-started/why-sourdough.md
+    - Fast Facts: getting-started/fast-facts.md
+    - Equipment Guide: getting-started/equipment-guide.md
+    - Ingredient Sourcing: getting-started/ingredient-sourcing.md
+    - South Australia Suppliers: getting-started/south-australia-suppliers.md
+    - Start Your Journey: getting-started/start-your-journey.md
     - Starter Readiness: getting-started/starter-readiness.md
+    - Your First Loaf: getting-started/first-loaf.md
   - Recipes:
     - Recipe Collection: recipes/index.md
     - Wheat-Based:
