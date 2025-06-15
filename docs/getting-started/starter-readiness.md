@@ -75,11 +75,13 @@ This tests your starter's vigor and predictability.
 ## Temperature and Timing Guide
 
 ### Optimal Temperatures:
+
 - **Feeding:** 21-24°C (70-75°F)
 - **Peak activity:** 24-27°C (75-80°F)
 - **Storage:** 3-4°C (38-40°F) for refrigerator
 
 ### Timing by Temperature:
+
 - **18°C (65°F):** Peak in 8-12 hours
 - **21°C (70°F):** Peak in 6-8 hours
 - **24°C (75°F):** Peak in 4-6 hours
@@ -156,6 +158,7 @@ This tests your starter's vigor and predictability.
 4. **Float test:** Passes easily
 
 ### Using Your Starter:
+
 - Use within 1-2 hours of peak
 - Have dough ready for starter addition
 - Reserve some for next feeding
@@ -164,18 +167,21 @@ This tests your starter's vigor and predictability.
 ## Maintaining Long-Term Health
 
 ### Weekly Maintenance:
+
 - Discard and feed at least 2x weekly
 - Clean jar monthly
 - Observe and note changes
 - Adjust ratios as needed
 
 ### Monthly Check-up:
+
 - Test doubling time
 - Assess aroma changes
 - Check for consistency
 - Perform seed test
 
 ### Seasonal Adjustments:
+
 - **Summer:** May need more frequent feeding
 - **Winter:** May need warmer location
 - **Humidity:** Affects hydration needs

@@ -64,6 +64,7 @@ Welcome to our comprehensive collection of sourdough recipes, organized to help 
 ## Recipe Features
 
 Each recipe includes:
+
 - **Grain Education**: Links to relevant blog posts explaining the grain's characteristics
 - **Timing Charts**: Visual guides for fermentation schedules
 - **Troubleshooting**: Common issues specific to each grain type
@@ -104,6 +105,7 @@ Follow the blog series progression:
 
 ### Seasonal Adjustments
 Many recipes include notes on:
+
 - Temperature variations affecting fermentation
 - Seasonal flour changes
 - Humidity considerations

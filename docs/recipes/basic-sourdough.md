@@ -72,6 +72,7 @@ Always maintain the same ratios for consistent results.
 ## Variations
 
 Once you master the basic recipe, try:
+
 - Different flour combinations
 - Adjusting hydration (65-80%)
 - Add-ins like seeds or olives

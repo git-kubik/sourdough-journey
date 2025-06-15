@@ -420,24 +420,28 @@ Your sourdough equipment needs evolve as your skills develop. This guide provide
 ## Quick Equipment Checklist
 
 **Getting Started Today**:
+
 - [ ] Mason jar for starter
 - [ ] Digital scale (any precision)
 - [ ] Large bowl for mixing
 - [ ] Wooden spoon for stirring
 
 **Ready to Bake**:
+
 - [ ] Bench scraper for handling dough
 - [ ] Dutch oven for baking
 - [ ] Parchment paper for transfers
 - [ ] Basic banneton (or improvised)
 
 **Improving Results**:
+
 - [ ] Precision scale (0.1g)
 - [ ] Proper lame for scoring
 - [ ] Temperature monitoring
 - [ ] Fermentation control
 
 **Going Professional**:
+
 - [ ] Multiple baking vessels
 - [ ] Steam injection system
 - [ ] Professional measuring tools

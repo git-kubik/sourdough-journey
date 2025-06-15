@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 As our documentation grows, we need consistent metadata across all documents to:
+
 - Provide clear authorship and dating information
 - Enable better content organization and filtering
 - Support potential future automation and tooling
@@ -24,6 +25,7 @@ As our documentation grows, we need consistent metadata across all documents to:
 - Ensure accountability and traceability
 
 However, we must be careful not to include sensitive information that could:
+
 - Expose internal infrastructure details
 - Reveal security-sensitive configuration
 - Leak personal or confidential information

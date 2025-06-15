@@ -285,6 +285,7 @@ Scoring isn't just decorative—it serves critical functions:
 ### Classical Scoring Patterns
 
 **Baguette**: 
+
 - 5-7 diagonal slashes
 - 45-degree angle to surface
 - Overlapping by 1/3

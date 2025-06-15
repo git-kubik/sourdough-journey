@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 We needed an orchestration platform for our containerized documentation that could:
+
 - Provide high availability and automatic failover
 - Enable zero-downtime deployments
 - Manage load balancing and service discovery
@@ -24,6 +25,7 @@ We needed an orchestration platform for our containerized documentation that cou
 - Be simple to operate and maintain
 
 Alternative orchestration options considered:
+
 - **Kubernetes**: More complex, overkill for our simple use case
 - **Docker Compose**: No clustering or high availability
 - **Nomad**: Additional tool to learn, smaller ecosystem

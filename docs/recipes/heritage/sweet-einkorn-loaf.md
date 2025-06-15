@@ -16,6 +16,7 @@ This recipe introduces you to einkorn, the original wheat that launched agricult
 ## Why Einkorn is Special
 
 From our [ancient grains blog post](../../blog/posts/grains-series-part-3.md#einkorn-the-original-wheat), **einkorn provides**:
+
 - **Genetic Simplicity**: Diploid wheat (14 chromosomes vs 42 in modern wheat)
 - **Superior Nutrition**: Higher protein, lutein, and essential fatty acids
 - **Unique Flavor**: Sweet, nutty taste unlike any modern grain
@@ -326,11 +327,13 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 4. Cover between folds
 
 **Progression Expectations**:
+
 - **Hour 1**: Dough feels soft and extensible
 - **Hour 2**: Slight increase in volume, more cohesive
 - **Hour 3**: Ready for shaping (30-50% increase)
 
 **Readiness Signs**:
+
 - 30-50% size increase (less than modern wheat)
 - Soft, pillowy feel
 - Sweet, honeyed aroma
@@ -350,6 +353,7 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 **2-Hour Proof**: Shorter than wheat due to faster fermentation
 
 **Visual Cues**:
+
 - Dough rises to about 1 inch above pan rim
 - Light, airy feel when gently shaken
 - Surface looks smooth and slightly domed
@@ -375,12 +379,14 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 ## Flavor Profile
 
 **Expected Characteristics**:
+
 - **Sweetness**: Natural grain sweetness enhanced by honey
 - **Nuttiness**: Distinctive nutty, almost buttery flavor
 - **Texture**: Tender, fine crumb (denser than modern wheat)
 - **Aroma**: Warm, toasted grain notes with honey undertones
 
 **Flavor Development Tips** from [einkorn flavor profile](../../blog/posts/grains-series-part-3.md#einkorn-flavor-profile):
+
 - Longer autolyse enhances nutty flavors
 - Cool overnight retard deepens complexity
 - Toasting einkorn flour lightly before use intensifies nuttiness
@@ -431,6 +437,7 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 ## Nutritional Powerhouse
 
 **Einkorn's Superior Nutrition** (from [einkorn nutritional profile](../../blog/posts/grains-series-part-3.md#einkorn-characteristics)):
+
 - **Higher Protein**: Up to 18% vs 12-14% in modern wheat
 - **Lutein**: 3x more than modern wheat (eye health)
 - **Essential Fatty Acids**: Better omega-3 profile
@@ -447,6 +454,7 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 ## Sourcing Einkorn
 
 **Where to Find Quality Einkorn**:
+
 - Jovial Foods (organic einkorn flour)
 - Azure Standard (bulk quantities)
 - Local health food stores
@@ -463,11 +471,13 @@ Ensure your starter is very active - einkorn needs vigorous fermentation help du
 3. **[Golden Khorasan Artisan](golden-khorasan-artisan.md)** - Explore the "pharaoh's wheat"
 
 **Deepen Your Knowledge**:
+
 - Learn about [ancient wheat family tree](../../blog/posts/grains-series-part-3.md#the-ancient-wheat-family-tree)
 - Understand [heritage grain sourcing](../../blog/posts/grains-series-part-3.md#sourcing-and-storage)
 - Explore [sustainable agriculture benefits](../../blog/posts/grains-series-part-3.md#seasonal-and-regional-considerations)
 
 **Compare Ancient vs Modern**:
+
 - Return to [Classic White Sourdough](../wheat/classic-white-sourdough.md) to appreciate the differences
 - Try [Brown Rice Sourdough](../alternative/brown-rice-sourdough.md) for another ancient grain experience
 

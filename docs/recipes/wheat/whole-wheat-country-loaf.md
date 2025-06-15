@@ -16,6 +16,7 @@ This recipe demonstrates how whole wheat flour transforms sourdough with deeper 
 ## Why Whole Wheat Changes Everything
 
 From our [wheat processing blog section](../../blog/posts/grains-series-part-1.md#whole-wheat-flour), **whole wheat brings**:
+
 - **Complete Nutrition**: Bran, germ, and endosperm all included
 - **Complex Flavors**: Nutty, earthy notes from bran and germ
 - **Faster Fermentation**: Enzymes in bran accelerate activity
@@ -38,12 +39,14 @@ From our [wheat processing blog section](../../blog/posts/grains-series-part-1.m
 ## Understanding the 80/20 Blend
 
 **Why Not 100% Whole Wheat?**: While possible, the 20% bread flour provides:
+
 - Better rise and structure
 - More approachable flavor for beginners
 - Easier handling characteristics
 - Transition bread before attempting 100% whole wheat
 
 **The 80% whole wheat still delivers**:
+
 - Full nutritional benefits
 - Complex, hearty flavors
 - Substantial texture
@@ -113,12 +116,14 @@ Use a very active starter - whole wheat's faster fermentation requires vigorous 
 4. **Cover between folds** - prevents surface drying
 
 **Progression Timeline**:
+
 - **Hour 1**: More active than white flour, increased bubbling
 - **Hour 2**: Noticeable strength increase, earthy aromas
 - **Hour 3**: Good cohesion despite bran texture
 - **Hour 4**: Ready for shaping (faster than white flour)
 
 **Readiness Indicators**:
+
 - 50-70% size increase
 - Active bubbling throughout
 - Jiggly, alive feel when moved
@@ -143,6 +148,7 @@ Use a very active starter - whole wheat's faster fermentation requires vigorous 
 **Shorter Proof**: 2.5-3 hours (vs 3+ for white flour)
 
 **Visual Cues**:
+
 - 40-50% size increase
 - Slightly domed surface
 - Gentle poke springs back slowly
@@ -153,6 +159,7 @@ Use a very active starter - whole wheat's faster fermentation requires vigorous 
 ### Step 8: Scoring and Baking (6:00 PM)
 
 **Scoring Whole Wheat**:
+
 - Score decisively - bran can cause dragging
 - Single bold slash or cross pattern works well
 - Slightly deeper than white flour scoring
@@ -170,12 +177,14 @@ Cool completely on wire rack (minimum 3 hours). Whole wheat breads continue deve
 ## Flavor Profile
 
 **Expected Characteristics**:
+
 - **Base flavor**: Nutty, earthy, complex
 - **Texture**: Denser than white, but tender crumb
 - **Crust**: Deeper color, more robust flavor
 - **Aroma**: Rich, toasted grain notes
 
 **Flavor Development Tips**:
+
 - **Cold retard**: Refrigerate shaped loaf overnight for deeper flavor
 - **Starter boost**: Use whole wheat in starter maintenance
 - **Toasted additions**: Light toasting of nuts or seeds complements
@@ -203,6 +212,7 @@ Cool completely on wire rack (minimum 3 hours). Whole wheat breads continue deve
 ## Nutritional Powerhouse
 
 **Whole Wheat Benefits** (from [nutritional advantages](../../blog/posts/grains-series-part-1.md#whole-wheat-flour)):
+
 - **Fiber**: 3x more than white flour
 - **B Vitamins**: Thiamine, riboflavin, niacin
 - **Minerals**: Iron, magnesium, zinc
@@ -249,11 +259,13 @@ Cool completely on wire rack (minimum 3 hours). Whole wheat breads continue deve
 3. **[Sweet Einkorn Loaf](../heritage/sweet-einkorn-loaf.md)** - Compare with ancient wheat varieties
 
 **Understanding Wheat Diversity**:
+
 - Learn about [wheat variety differences](../../blog/posts/grains-series-part-1.md#modern-wheat-varieties)
 - Explore [regional wheat characteristics](../../blog/posts/grains-series-part-1.md#regional-wheat-characteristics)
 - Study [seasonal wheat variations](../../blog/posts/grains-series-part-1.md#seasonal-variations)
 
 **Compare Processing Levels**:
+
 - Return to [Classic White Sourdough](classic-white-sourdough.md) to appreciate processing differences
 - Try [high-extraction flour blends](../../blog/posts/grains-series-part-1.md#high-extraction-flour-85-90-extraction)
 

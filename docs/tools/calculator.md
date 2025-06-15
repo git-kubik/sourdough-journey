@@ -365,6 +365,7 @@ Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adj
 3. **Starter Percentage**: Adjust the amount of starter relative to flour (10% - 30%)
 
 The calculator automatically:
+
 - Maintains the 89:11 ratio of bread flour to whole wheat
 - Keeps salt at 2% of total flour weight
 - Recalculates all ingredients to achieve your target loaf size

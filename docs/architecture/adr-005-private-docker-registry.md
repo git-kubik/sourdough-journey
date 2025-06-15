@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 We needed a Docker registry solution that could:
+
 - Store our built Docker images securely
 - Be accessible from our CI/CD pipeline and deployment infrastructure
 - Provide reasonable performance for image pulls
@@ -24,6 +25,7 @@ We needed a Docker registry solution that could:
 - Integrate with our existing Docker Swarm infrastructure
 
 Alternative registry options considered:
+
 - **Docker Hub**: Public visibility, rate limiting, costs for private repos
 - **GitHub Container Registry**: Tied to GitHub, potential costs
 - **AWS ECR**: AWS dependency, additional complexity and costs

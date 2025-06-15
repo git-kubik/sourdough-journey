@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 We needed a deployment strategy that could:
+
 - Ensure consistent environments across development and production
 - Simplify deployment and scaling
 - Isolate dependencies and runtime environment
@@ -24,6 +25,7 @@ We needed a deployment strategy that could:
 - Work with our chosen documentation platform (MkDocs)
 
 Alternative deployment options considered:
+
 - Direct server deployment: Manual setup, environment inconsistencies
 - Virtual machines: Resource overhead, slower deployment
 - Serverless (Netlify/Vercel): Vendor lock-in, limited control

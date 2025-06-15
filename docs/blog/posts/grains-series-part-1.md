@@ -32,6 +32,7 @@ Before diving into varieties, it's essential to understand what makes wheat spec
 ### Gluten Formation
 
 Wheat contains two main proteins:
+
 - **Gliadin**: Provides extensibility (stretch)
 - **Glutenin**: Provides elasticity (bounce-back)
 
@@ -47,6 +48,7 @@ Wheat flours are typically categorized by protein content:
 - **Very High Protein (14%+)**: Special bread and pizza flours
 
 For sourdough, protein content affects:
+
 - **Rise potential**: Higher protein generally means better rise
 - **Texture**: More protein creates chewier bread
 - **Water absorption**: High-protein flours absorb more water
@@ -353,6 +355,7 @@ In our next installment, we'll explore rye—a grain that behaves very different
 ## Coming Next: Part 2 - Rye and Its Unique Properties
 
 Join us as we explore:
+
 - Why rye ferments differently from wheat
 - Traditional European rye sourdough techniques
 - Managing rye's unique handling characteristics

@@ -16,6 +16,7 @@ Welcome to the magical world of sourdough! You're about to embark on a journey t
 
 ### The Living Culture
 A sourdough starter is a **living ecosystem** of wild yeast and beneficial bacteria that:
+
 - **Captures wild yeast** from flour and environment
 - **Develops lactic acid bacteria** for tangy flavor
 - **Creates natural leavening** power for bread rising
@@ -23,6 +24,7 @@ A sourdough starter is a **living ecosystem** of wild yeast and beneficial bacte
 
 ### Why Start from Scratch?
 Creating your own starter means:
+
 - **Understanding the process** from beginning to end
 - **Developing your own unique culture** adapted to your environment
 - **Building confidence** through hands-on learning
@@ -173,6 +175,7 @@ Creating your own starter means:
 **Building strength and consistency**
 
 **Continue daily feeding** with same routine:
+
 - 50g starter : 50g flour : 50g water
 - Same time each day
 - Observe patterns
@@ -306,6 +309,7 @@ Creating your own starter means:
 
 ### The Readiness Checklist
 Your starter is ready for bread when it **consistently**:
+
 - ✅ **Doubles in size** within 4-8 hours of feeding
 - ✅ **Passes the float test** at peak
 - ✅ **Has pleasant, tangy aroma** (not overly sour)

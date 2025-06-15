@@ -57,6 +57,7 @@ Ready to begin your sourdough adventure? Here's your roadmap:
 ## Current Focus
 
 MaK is currently working on:
+
 - Perfecting the basic sourdough recipe
 - Understanding fermentation timing
 - Developing consistent shaping techniques

@@ -14,6 +14,7 @@ Welcome to your first sourdough baking adventure! This guide will walk you throu
 ## Ingredients List (700g Loaf)
 
 ### For the Dough:
+
 - **400g** bread flour (12-13% protein content)
 - **50g** whole wheat flour 
 - **315g** water (room temperature, 70% hydration)
@@ -21,6 +22,7 @@ Welcome to your first sourdough baking adventure! This guide will walk you throu
 - **9g** salt (2% of flour weight)
 
 ### Additional Needs:
+
 - Rice flour for dusting (prevents sticking)
 - Water spray bottle for steam
 - Banneton or bowl lined with tea towel
@@ -33,6 +35,7 @@ Welcome to your first sourdough baking adventure! This guide will walk you throu
 
 ### 7:00 AM - Starter Assessment
 Your starter should have doubled or tripled in size and pass the float test:
+
 - Drop a spoonful in water - it should float
 - Smell should be pleasantly sour, not overly acidic
 - Surface should show bubbles and have a domed appearance
@@ -245,12 +248,14 @@ Let cool on wire rack for at least 1 hour before slicing.
 3. **70% increase:** Ready to shape, domed surface
 
 ### The Poke Test:
+
 - **Springs back quickly:** Under-proofed
 - **Springs back slowly with slight indent:** Perfect
 - **No spring back:** Over-proofed
 
 ### Window Pane Test:
 Stretch small piece of dough:
+
 - **Tears immediately:** Needs more development
 - **Stretches thin without tearing:** Ready
 

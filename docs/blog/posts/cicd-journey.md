@@ -69,6 +69,7 @@ To ensure our setup was bulletproof, we created comprehensive testing tools:
 ### 1. Docker Registry Test Guide
 
 A detailed guide (`DOCKER_REGISTRY_TEST_GUIDE.md`) documenting:
+
 - Step-by-step testing procedures
 - Common troubleshooting scenarios
 - Performance benchmarking approaches
@@ -76,6 +77,7 @@ A detailed guide (`DOCKER_REGISTRY_TEST_GUIDE.md`) documenting:
 ### 2. Automated Test Script
 
 An intelligent script (`automated-registry-test.sh`) that:
+
 - Builds a test container
 - Authenticates with the registry
 - Performs the complete push/pull cycle
@@ -127,6 +129,7 @@ WantedBy=default.target
 ```
 
 This ensures the runner:
+
 - Starts automatically on boot
 - Runs with user permissions (not root)
 - Restarts if it crashes

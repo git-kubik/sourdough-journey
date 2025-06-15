@@ -16,6 +16,7 @@ This recipe introduces you to rye's unique characteristics while maintaining the
 ## Why Start with 20% Rye?
 
 From our [rye properties blog post](../../blog/posts/grains-series-part-2.md#rye-and-wheat-combinations), **20% rye provides**:
+
 - Subtle rye flavor without overwhelming wheat character
 - Manageable dough handling with familiar techniques
 - Faster fermentation to practice timing adjustments
@@ -240,6 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 **Bread Flour (80%)**: Provides structure and familiar handling
 **Medium Rye Flour (20%)**: Introduces:
+
 - Earthy, slightly tangy flavor
 - Faster fermentation due to [high enzyme activity](../../blog/posts/grains-series-part-2.md#the-enzyme-factor)
 - Increased water absorption from [pentosans](../../blog/posts/grains-series-part-2.md#the-pentosan-effect)
@@ -297,17 +299,20 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 **Critical Timing**: As explained in [rye fermentation management](../../blog/posts/grains-series-part-2.md#fermentation-management), rye ferments faster due to high enzyme activity.
 
 **Modified Fold Schedule**:
+
 - **Every 45 minutes** for first 3 folds (instead of hourly)
 - Use **wet hands** - this is essential with rye
 - Gentle handling to avoid breaking down rye's weaker protein structure
 
 **What to Expect**:
+
 - **Hour 1**: More active bubbling than wheat-only dough
 - **Hour 2**: Noticeably increased strength and aroma
 - **Hour 3**: Earthy, sweet rye aromas developing
 - **Hour 4**: Ready 30-60 minutes earlier than wheat dough
 
 **Readiness Signs**:
+
 - 50-60% size increase (less than pure wheat)
 - Jiggly, active surface
 - Sweet, yeasty aroma with earthy notes
@@ -331,6 +336,7 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 **Why Shorter?**: Rye's [enzyme activity](../../blog/posts/grains-series-part-2.md#the-enzyme-factor) continues breaking down starches, accelerating fermentation.
 
 **Readiness Test**: 
+
 - Gentle poke springs back about 1/3 of the way
 - Dough feels light and airy
 - Slight wobble when moved
@@ -338,6 +344,7 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 ### Step 8: Scoring and Baking (5:00 PM)
 
 **Scoring Considerations**:
+
 - Rye creates different oven spring patterns
 - Single bold slash works well
 - Score confidently - rye dough can be sticky
@@ -375,12 +382,14 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 ## Flavor Development
 
 **Expected Flavor Profile**:
+
 - **Base**: Familiar wheat bread character
 - **Rye Notes**: Subtle earthiness and slight tang
 - **Sweetness**: Natural grain sweetness enhanced by fermentation
 - **Complexity**: More interesting than pure wheat
 
 **Enhancing Rye Flavors** (from [flavor development section](../../blog/posts/grains-series-part-2.md#flavor-development-in-rye)):
+
 - Longer autolyse (up to 60 minutes)
 - Cool overnight retard in refrigerator
 - Addition of caraway seeds (traditional pairing)
@@ -407,6 +416,7 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 ## Nutritional Benefits
 
 **Rye Nutrition Highlights** (from [health benefits](../../blog/posts/grains-series-part-2.md#health-benefits-of-rye)):
+
 - Higher fiber than wheat
 - Rich in potassium and magnesium
 - Lower glycemic index
@@ -425,11 +435,13 @@ Use an active starter that's doubled in size. **Rye tip**: A small amount of rye
 2. **[Dark Rye Powerhouse (70%)](dark-rye-powerhouse.md)** - Expert-level rye baking
 
 **Deepen Your Understanding**:
+
 - Learn about [different rye flour types](../../blog/posts/grains-series-part-2.md#types-of-rye-flour)
 - Explore [traditional rye styles](../../blog/posts/grains-series-part-2.md#traditional-rye-sourdough-styles)
 - Understand [rye starter maintenance](../../blog/posts/grains-series-part-2.md#building-and-maintaining-rye-starters)
 
 **Compare Grain Behaviors**:
+
 - Try [Sweet Einkorn Loaf](../heritage/sweet-einkorn-loaf.md) to experience ancient grain differences
 - Return to [Classic White Sourdough](../wheat/classic-white-sourdough.md) to appreciate rye's unique qualities
 

@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 We needed a documentation platform that could:
+
 - Generate static sites for easy deployment
 - Provide good navigation and search capabilities
 - Support markdown-based content creation
@@ -25,6 +26,7 @@ We needed a documentation platform that could:
 - Support code syntax highlighting and mathematical expressions
 
 Alternative options considered:
+
 - GitBook: Commercial platform with limitations
 - Sphinx: More complex setup, Python-focused
 - Docusaurus: React-based, more complex for simple documentation

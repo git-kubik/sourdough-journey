@@ -404,6 +404,7 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
 
 **Cost of convenience analysis:**
 - **Health implications**: 
+
   - **Preservative toxicity**: Calcium propionate linked to ADHD, propionic acid disrupts metabolism
   - **Endocrine disruption**: BHT/BHA interfere with hormone function
   - **Gut microbiome damage**: Multiple preservatives kill beneficial bacteria
@@ -413,15 +414,18 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
   - **Behavioral effects**: Artificial additives linked to hyperactivity in children
   - **Cumulative toxicity**: Daily exposure to chemical cocktail over decades
 - **Environmental impact**: 
+
   - Industrial agriculture, pesticide use
   - Extensive packaging and transportation
   - Factory energy consumption
   - Chemical waste from processing
 - **Economic cost**: 
+
   - $3-6 for inferior nutrition and 20+ additives
   - Hidden healthcare costs from processed food consumption
   - Premium price for convenience vs. pennies for homemade quality
 - **Skill atrophy**: 
+
   - Lost connection to food origins
   - Dependence on industrial food system
   - Missing traditional knowledge and self-sufficiency

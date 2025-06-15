@@ -17,12 +17,14 @@ Accepted
 
 ## Context
 We needed a way for our GitHub Actions CI/CD pipeline to:
+
 - Access our private Docker registry on the internal network
 - Deploy to our Docker Swarm cluster
 - Perform authenticated operations on internal infrastructure
 - Avoid exposing internal services to the public internet
 
 GitHub-hosted runners have limitations:
+
 - No access to internal/private networks
 - Cannot reach our private Docker registry
 - Cannot deploy to internal Docker Swarm cluster

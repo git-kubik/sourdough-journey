@@ -122,6 +122,7 @@ With massive population losses, surviving bakers had to become more efficient:
 ### Social Changes Affect Bread
 
 The post-plague period saw:
+
 - **Increased demand for white bread** as social mobility increased
 - **Guild restructuring** with more flexible apprenticeship systems
 - **Rural-urban migration** spreading different regional techniques
@@ -252,6 +253,7 @@ These foundations would prove crucial as the world entered the Industrial Revolu
 ## Coming Next: Part 3 - Industrial Revolution and the Modern Renaissance
 
 Our next installment will explore:
+
 - How industrialization nearly killed traditional sourdough
 - The rise of commercial yeast and its impact
 - The 20th century's fast food culture

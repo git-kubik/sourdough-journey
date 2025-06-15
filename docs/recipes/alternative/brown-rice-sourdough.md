@@ -370,6 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
 **Critical Step**: Proper blending of flours and xanthan gum prevents lumps.
 
 1. **Sift together** in large bowl:
+
    - 300g brown rice flour
    - 150g white rice flour
    - 75g tapioca starch
@@ -388,6 +389,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ### Step 3: Wet Ingredient Preparation (9:00 AM)
 
 1. **Combine in separate bowl**:
+
    - 400g room temperature water
    - 100g active gluten-free starter
    - 30g olive oil

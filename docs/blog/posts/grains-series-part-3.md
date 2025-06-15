@@ -77,6 +77,7 @@ Unlike modern wheat, einkorn was never "improved" through selective breeding, ma
 
 **Protein and Gluten:**
 Einkorn contains gluten, but it's structurally different from modern wheat gluten. The proteins are:
+
 - Less elastic and extensible
 - More digestible for some gluten-sensitive individuals
 - Require different handling techniques
@@ -174,6 +175,7 @@ Emmer sustained the great civilizations of antiquity—Egypt, Mesopotamia, and t
 
 **Protein Structure:**
 Emmer's gluten is stronger than einkorn but different from modern wheat:
+
 - More extensible than einkorn
 - Less elastic than modern bread wheat
 - Creates tender, slightly dense crumb
@@ -257,6 +259,7 @@ Today, spelt is experiencing a revival among bakers seeking its unique flavor an
 
 **Handling Characteristics:**
 Spelt behaves more like modern wheat but with important differences:
+
 - Gluten is more fragile and water-soluble
 - Over-mixing breaks down structure quickly
 - Requires gentler handling throughout process
@@ -639,6 +642,7 @@ In our next and final installment, we'll explore alternative grains and gluten-f
 ## Coming Next: Part 4 - Alternative Grains and Gluten-Free Options
 
 Join us as we explore:
+
 - Gluten-free grains suitable for sourdough fermentation
 - Rice, corn, millet, and other alternative grains
 - Techniques for creating structure without gluten

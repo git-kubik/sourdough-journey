@@ -17,6 +17,7 @@ Accepted
 
 ## Context
 We needed a CI/CD solution that could:
+
 - Automatically build and deploy documentation changes
 - Integrate with our GitHub repository
 - Build Docker images and push to private registry
@@ -25,6 +26,7 @@ We needed a CI/CD solution that could:
 - Be cost-effective and easy to maintain
 
 Alternative CI/CD options considered:
+
 - **Jenkins**: Self-hosted complexity, maintenance overhead
 - **GitLab CI**: Would require migrating from GitHub
 - **Travis CI**: Additional service, costs for private repos

@@ -322,6 +322,7 @@ seasonal-baking/
 ```yaml
 # Potential data structures
 dough_stages:
+
   - stage_id
   - recipe_type
   - stage_name
@@ -331,6 +332,7 @@ dough_stages:
   - description
 
 troubleshooting_items:
+
   - problem_id
   - category
   - symptoms

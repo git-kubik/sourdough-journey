@@ -16,6 +16,7 @@ This recipe showcases the reliable foundation qualities of modern bread flour di
 ## Why This Recipe Works
 
 As explained in our [wheat varieties blog post](../../blog/posts/grains-series-part-1.md#modern-wheat-varieties), bread flour's **12-14% protein content** creates the strong gluten network essential for:
+
 - Excellent gas retention and rise
 - Chewy, satisfying texture
 - Tolerance for longer fermentation
@@ -289,6 +290,7 @@ Feed your starter with 1:1:1 ratio (starter:flour:water) and let rise overnight.
 5. Cover and rest until next fold
 
 **What to Look For**:
+
 - **Hour 1**: Dough feels loose and extensible
 - **Hour 2**: Noticeable strength increase
 - **Hour 3**: Smooth surface, holds shape better
@@ -306,12 +308,14 @@ Feed your starter with 1:1:1 ratio (starter:flour:water) and let rise overnight.
 3. Cover with damp towel or plastic
 
 **Shaping Tips from [Wheat Foundation](../../blog/posts/grains-series-part-1.md#mixing-and-handling)**:
+
 - Bread flour's strong gluten handles shaping well
 - Create adequate surface tension
 - Don't over-flour the surface
 
 ### Step 7: Final Proof (3:00 PM - 6:00 PM)
 **Room Temperature Proofing** (70-75°F):
+
 - 2-3 hours depending on temperature
 - Dough should increase by 40-50%
 - Gentle poke should spring back slowly
@@ -380,6 +384,7 @@ Cool completely on wire rack before cutting (minimum 2 hours). The crumb continu
 ## Nutritional Benefits
 
 **Bread Flour Advantages** (from [Wheat Foundation](../../blog/posts/grains-series-part-1.md)):
+
 - High protein for muscle building
 - B vitamins for energy metabolism
 - Iron for blood health
@@ -399,6 +404,7 @@ Cool completely on wire rack before cutting (minimum 2 hours). The crumb continu
 3. **Master Hydration**: [High-Hydration Artisan Bread](high-hydration-artisan.md) - Advanced technique
 
 **Understanding the Science**:
+
 - Read about [different wheat varieties](../../blog/posts/grains-series-part-1.md#modern-wheat-varieties)
 - Learn about [protein content effects](../../blog/posts/grains-series-part-1.md#protein-content-categories)
 - Understand [regional wheat characteristics](../../blog/posts/grains-series-part-1.md#regional-wheat-characteristics)
