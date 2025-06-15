@@ -37,9 +37,16 @@ jobs:
     
     - name: Build Docker image
       run: |
-        # Build the Docker image with all tags
+        # Get git information for build
+        GIT_COMMIT=$(git rev-parse --short HEAD)
+        GIT_DATE=$(date '+%Y-%m-%d')
+        
+        # Build the Docker image with all tags and git info
         for tag in $(echo "${{ steps.meta.outputs.tags }}" | tr ',' ' '); do
-          docker build -t "${tag}" .
+          docker build \
+            --build-arg GIT_COMMIT="${GIT_COMMIT}" \
+            --build-arg GIT_DATE="${GIT_DATE}" \
+            -t "${tag}" .
         done
     
     - name: Test image

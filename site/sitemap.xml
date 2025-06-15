@@ -2,30 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/troubleshooting/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-001-mkdocs-material-theme/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-002-docker-containerization/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-003-docker-swarm-deployment/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-004-github-actions-cicd/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-005-private-docker-registry/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-006-self-hosted-github-runner/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/adr-007-document-frontmatter-standards/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/architecture/implementation-plan-baker-features/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/cicd-journey/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/grains-series-part-1/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/grains-series-part-2/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/grains-series-part-3/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/grains-series-part-4/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/sourdough-history-part-1/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/sourdough-history-part-2/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/posts/sourdough-history-part-3/</loc>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/getting-started/first-loaf/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/getting-started/starter-readiness/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/</loc>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/recipes/basic-sourdough/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/alternative/brown-rice-sourdough/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/heritage/sweet-einkorn-loaf/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/rye/beginners-rye-blend/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/wheat/classic-white-sourdough/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/recipes/wheat/whole-wheat-country-loaf/</loc>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/techniques/folding-shaping/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
     </url>
     <url>
          <loc>https://example.com/tools/calculator/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-15</lastmod>
     </url>
 </urlset>

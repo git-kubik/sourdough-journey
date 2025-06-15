@@ -1,12 +1,14 @@
 # Build stage
 FROM python:3.11-slim as builder
 
+# Accept build arguments for git information
+ARG GIT_COMMIT=unknown
+ARG GIT_DATE=unknown
+
 WORKDIR /app
 
-# Install git (needed for git plugin) and uv for faster dependency management
-RUN apt-get update && apt-get install -y git && \
-    pip install uv && \
-    rm -rf /var/lib/apt/lists/*
+# Install uv for faster dependency management
+RUN pip install uv
 
 # Copy dependency files
 COPY pyproject.toml uv.lock ./
@@ -14,8 +16,8 @@ COPY pyproject.toml uv.lock ./
 # Install dependencies using uv
 RUN uv pip install --system -r pyproject.toml
 
-# Copy git directory for version info
-COPY .git ./.git
+# Copy git directory for version info (if it exists)
+# Note: In CI, git info is passed via build args
 
 # Copy the rest of the application
 COPY mkdocs.yml ./
@@ -23,7 +25,8 @@ COPY docs ./docs
 COPY inject-git-version.sh ./
 
 # Build the static site with git version injection
-RUN chmod +x inject-git-version.sh && ./inject-git-version.sh
+RUN chmod +x inject-git-version.sh && \
+    GIT_COMMIT=${GIT_COMMIT} GIT_DATE=${GIT_DATE} ./inject-git-version.sh
 
 # Production stage - nginx to serve static files
 FROM nginx:alpine
