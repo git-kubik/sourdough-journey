@@ -3,8 +3,10 @@ FROM python:3.11-slim as builder
 
 WORKDIR /app
 
-# Install uv for faster dependency management
-RUN pip install uv
+# Install git (needed for git plugin) and uv for faster dependency management
+RUN apt-get update && apt-get install -y git && \
+    pip install uv && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copy dependency files
 COPY pyproject.toml uv.lock ./
@@ -12,12 +14,16 @@ COPY pyproject.toml uv.lock ./
 # Install dependencies using uv
 RUN uv pip install --system -r pyproject.toml
 
+# Copy git directory for version info
+COPY .git ./.git
+
 # Copy the rest of the application
 COPY mkdocs.yml ./
 COPY docs ./docs
+COPY inject-git-version.sh ./
 
-# Build the static site
-RUN mkdocs build
+# Build the static site with git version injection
+RUN chmod +x inject-git-version.sh && ./inject-git-version.sh
 
 # Production stage - nginx to serve static files
 FROM nginx:alpine
