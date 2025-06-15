@@ -139,6 +139,7 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
 ### Minimal Processing, Maximum Impact
 
 **Sourdough's environmental advantages:**
+
 - **No commercial yeast production** - eliminates industrial manufacturing
 - **Reduced packaging** - bulk flour vs. wrapped bread
 - **Local grain support** - encourages regional agriculture
