@@ -157,6 +157,7 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
 ### Connecting to Seasons
 
 **Natural rhythm alignment:**
+
 - **Seasonal ingredients** - local grains, harvest timing
 - **Temperature adaptation** - fermentation follows weather
 - **Energy efficiency** - oven use coordination
@@ -573,6 +574,7 @@ In our fast-paced world of instant everything, why would anyone choose to spend 
 The question isn't really "Why sourdough?" but rather "Why not sourdough?"
 
 In choosing sourdough, you're choosing:
+
 - **Health** over convenience
 - **Quality** over quantity
 - **Connection** over disconnection
