@@ -223,6 +223,19 @@ From our [rye properties blog post](../../blog/posts/grains-series-part-2.md#rye
 })();
 </script>
 
+## Recipe Calendar & Scheduling
+
+Perfect timing is crucial for rye! Use this calendar to plan your rye baking schedule with all the critical timing adjustments for rye's faster fermentation.
+
+<div id="rye-blend-calendar"></div>
+
+<script>
+// Initialize the calendar for this recipe
+document.addEventListener('DOMContentLoaded', function() {
+    initRecipeCalendar('rye-blend-calendar', 'beginners-rye-blend', 'Beginner\'s Rye Blend', '/recipes/rye/beginners-rye-blend');
+});
+</script>
+
 ## Understanding the Grain Blend
 
 **Bread Flour (80%)**: Provides structure and familiar handling

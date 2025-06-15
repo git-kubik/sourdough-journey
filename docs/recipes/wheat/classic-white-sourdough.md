@@ -212,6 +212,19 @@ As explained in our [wheat varieties blog post](../../blog/posts/grains-series-p
 })();
 </script>
 
+## Recipe Calendar & Scheduling
+
+Plan your baking day with precision! Enter your preferred date and start time to generate a complete timeline with calendar reminders for each step.
+
+<div id="classic-white-calendar"></div>
+
+<script>
+// Initialize the calendar for this recipe
+document.addEventListener('DOMContentLoaded', function() {
+    initRecipeCalendar('classic-white-calendar', 'classic-white-sourdough', 'Classic White Sourdough', '/recipes/wheat/classic-white-sourdough');
+});
+</script>
+
 ## Equipment
 
 - Large mixing bowl

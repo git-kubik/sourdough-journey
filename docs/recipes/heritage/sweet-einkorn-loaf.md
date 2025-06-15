@@ -246,6 +246,19 @@ From our [ancient grains blog post](../../blog/posts/grains-series-part-3.md#ein
 })();
 </script>
 
+## Recipe Calendar & Scheduling
+
+Ancient grains need gentle timing! Schedule your einkorn baking day with this calendar that accounts for einkorn's unique fermentation characteristics.
+
+<div id="einkorn-calendar"></div>
+
+<script>
+// Initialize the calendar for this recipe
+document.addEventListener('DOMContentLoaded', function() {
+    initRecipeCalendar('einkorn-calendar', 'sweet-einkorn-loaf', 'Sweet Einkorn Loaf', '/recipes/heritage/sweet-einkorn-loaf');
+});
+</script>
+
 ## Understanding Einkorn's Unique Properties
 
 **Why Blend with Bread Flour?**: Pure einkorn creates very dense bread. The 40% bread flour provides structure while showcasing einkorn's character.

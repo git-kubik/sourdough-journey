@@ -1,0 +1,235 @@
+/* Recipe Calendar Styles */
+.recipe-calendar {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.calendar-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.calendar-control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.calendar-control-group label {
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.95em;
+}
+
+.calendar-input {
+    padding: 10px 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    background: white;
+}
+
+.calendar-input:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.schedule-preview {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin: 16px 0;
+    overflow: hidden;
+}
+
+.schedule-header {
+    background: #8B4513;
+    color: white;
+    padding: 12px 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-date {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.schedule-timeline {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.timeline-item:hover {
+    background-color: #f8f9fa;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-time {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #8B4513;
+    min-width: 80px;
+    margin-right: 16px;
+}
+
+.timeline-activity {
+    flex: 1;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.timeline-duration {
+    font-size: 0.85em;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.timeline-phase {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    font-weight: 600;
+}
+
+.timeline-phase .timeline-activity {
+    color: #856404;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.download-button {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #A0522D 0%, #8B4513 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.download-button:active {
+    transform: translateY(0);
+}
+
+.download-info {
+    font-size: 0.9em;
+    color: #6c757d;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.timezone-display {
+    font-size: 0.8em;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .calendar-controls {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .timeline-time {
+        min-width: auto;
+        margin-right: 0;
+    }
+}
+
+/* Dark mode support */
+[data-md-color-scheme="slate"] .recipe-calendar {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    border-color: #4a5568;
+}
+
+[data-md-color-scheme="slate"] .schedule-preview {
+    background: #1a202c;
+    border-color: #4a5568;
+}
+
+[data-md-color-scheme="slate"] .calendar-input {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: white;
+}
+
+[data-md-color-scheme="slate"] .timeline-item:hover {
+    background-color: #2d3748;
+}
+
+[data-md-color-scheme="slate"] .timeline-phase {
+    background: #44403c;
+    border-left-color: #fbbf24;
+}

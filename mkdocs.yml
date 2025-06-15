@@ -119,5 +119,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/recipe-calculator.css
+  - stylesheets/recipe-calendar.css
+
+extra_javascript:
+  - js/recipe-calendar.js
   
 copyright: Copyright &copy; 2025 MaK & CodeCrust - Mastering the art of sourdough and code

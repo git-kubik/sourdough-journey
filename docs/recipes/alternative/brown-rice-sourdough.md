@@ -305,6 +305,19 @@ From our [rice in sourdough blog post](../../blog/posts/grains-series-part-4.md#
 })();
 </script>
 
+## Recipe Calendar & Scheduling
+
+Gluten-free timing is different! Plan your brown rice sourdough with this calendar that accounts for extended fermentation times and critical cooling periods.
+
+<div id="rice-sourdough-calendar"></div>
+
+<script>
+// Initialize the calendar for this recipe
+document.addEventListener('DOMContentLoaded', function() {
+    initRecipeCalendar('rice-sourdough-calendar', 'brown-rice-sourdough', 'Brown Rice Sourdough', '/recipes/alternative/brown-rice-sourdough');
+});
+</script>
+
 ## Equipment Considerations
 
 **Dedicated Gluten-Free**: To prevent cross-contamination for celiac concerns:
