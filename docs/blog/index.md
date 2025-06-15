@@ -12,6 +12,16 @@ Welcome to the technical blog section of MaK's Sourdough Journey! Here, we docum
 
 ## Latest Posts
 
+### [The Art of Bread Shapes: Part 4 - Functional Design and Purpose-Driven Forms](posts/loaves-series-part-4.md)
+*June 15, 2025*
+
+Understanding how bread shape serves function - from sandwich architecture to storage optimization. Explore the science behind functional bread design, perfect loaf geometry, and how modern understanding of food science informs optimal shape selection.
+
+### [The Art of Bread Shapes: Part 3 - Modern Artisan Innovation and Scoring Mastery](posts/loaves-series-part-3.md)
+*June 15, 2025*
+
+Exploring contemporary bread artistry, advanced scoring techniques, and how modern bakers are pushing creative boundaries while respecting traditional foundations.
+
 ### [Grains for Sourdough: Part 4 - Alternative Grains and Gluten-Free Options](posts/grains-series-part-4.md)
 *June 15, 2025*
 
@@ -46,6 +56,15 @@ The complete journey of setting up a Docker registry, configuring GitHub Actions
 
 ## Featured Series
 
+### The Art of Bread Shapes
+
+A comprehensive four-part series exploring bread loaves, styles, shapes, and their regional relevance:
+
+1. **[Classical Forms and Their Origins](posts/loaves-series-part-1.md)** - Understanding traditional bread shapes and their purposes
+2. **[Regional Traditions and Cultural Significance](posts/loaves-series-part-2.md)** - How geography and culture shaped distinctive bread traditions
+3. **[Modern Artisan Innovation and Scoring Mastery](posts/loaves-series-part-3.md)** - Contemporary techniques and artistic expression
+4. **[Functional Design and Purpose-Driven Forms](posts/loaves-series-part-4.md)** - How form follows function in practical baking
+
 ### Grains for Sourdough
 
 A comprehensive four-part series exploring the diverse world of grains for sourdough baking:
@@ -67,8 +86,8 @@ A comprehensive three-part series exploring sourdough's journey through human ci
 
 ## Categories
 
-- **Baking Education** - Grain varieties, techniques, and sourdough science
-- **History & Culture** - Traditional methods and cultural heritage
+- **Baking Education** - Grain varieties, techniques, bread shapes, and sourdough science
+- **History & Culture** - Traditional methods, cultural heritage, and regional traditions
 - **Infrastructure** - Docker, Swarm, registries, and deployment
 - **Development** - Code improvements, features, and tools
 - **DevOps** - CI/CD, automation, and monitoring
