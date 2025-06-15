@@ -70,13 +70,40 @@ nav:
     - Your First Loaf: getting-started/first-loaf.md
     - Starter Readiness: getting-started/starter-readiness.md
   - Recipes:
-    - Basic Sourdough: recipes/basic-sourdough.md
+    - Recipe Collection: recipes/index.md
+    - Wheat-Based:
+      - Classic White Sourdough: recipes/wheat/classic-white-sourdough.md
+    - Rye Integration:
+      - Beginner's Rye Blend (20%): recipes/rye/beginners-rye-blend.md
+    - Heritage Grains:
+      - Sweet Einkorn Loaf: recipes/heritage/sweet-einkorn-loaf.md
+    - Alternative & Gluten-Free:
+      - Brown Rice Sourdough: recipes/alternative/brown-rice-sourdough.md
+    - Classic Recipe: recipes/basic-sourdough.md
   - Techniques:
     - Folding & Shaping: techniques/folding-shaping.md
   - Tools:
     - Ingredient Calculator: tools/calculator.md
+  - Architecture:
+    - Overview: architecture/README.md
+    - ADR-001 MkDocs Material Theme: architecture/adr-001-mkdocs-material-theme.md
+    - ADR-002 Docker Containerization: architecture/adr-002-docker-containerization.md
+    - ADR-003 Docker Swarm Deployment: architecture/adr-003-docker-swarm-deployment.md
+    - ADR-004 GitHub Actions CI/CD: architecture/adr-004-github-actions-cicd.md
+    - ADR-005 Private Docker Registry: architecture/adr-005-private-docker-registry.md
+    - ADR-006 Self-Hosted GitHub Runner: architecture/adr-006-self-hosted-github-runner.md
+    - ADR-007 Document Frontmatter Standards: architecture/adr-007-document-frontmatter-standards.md
   - Blog:
     - Blog Home: blog/index.md
+    - Grains Series:
+      - "Part 1: The Wheat Foundation": blog/posts/grains-series-part-1.md
+      - "Part 2: Rye and Its Properties": blog/posts/grains-series-part-2.md
+      - "Part 3: Ancient & Heritage Grains": blog/posts/grains-series-part-3.md
+      - "Part 4: Alternative & Gluten-Free": blog/posts/grains-series-part-4.md
+    - History Series:
+      - "Part 1: Ancient Origins": blog/posts/sourdough-history-part-1.md
+      - "Part 2: Medieval & Renaissance": blog/posts/sourdough-history-part-2.md
+      - "Part 3: Industrial to Modern": blog/posts/sourdough-history-part-3.md
     - Setting Up CI/CD: blog/posts/cicd-journey.md
   - Troubleshooting: troubleshooting.md
 
@@ -91,5 +118,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/recipe-calculator.css
   
 copyright: Copyright &copy; 2025 MaK & CodeCrust - Mastering the art of sourdough and code

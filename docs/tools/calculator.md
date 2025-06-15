@@ -1,3 +1,12 @@
+---
+title: "Sourdough Ingredient Calculator"
+date: "2025-06-15"
+author: "MaK"
+tags: ["calculator", "tools", "ingredients", "recipe", "proportions"]
+category: "Tools"
+description: "Interactive calculator for precise sourdough ingredient amounts based on loaf size and hydration"
+---
+
 # Sourdough Ingredient Calculator
 
 Calculate precise ingredient amounts for your perfect sourdough loaf. Simply adjust the loaf size or hydration level, and the calculator will update all ingredients proportionally.

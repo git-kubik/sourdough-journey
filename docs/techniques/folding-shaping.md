@@ -1,3 +1,12 @@
+---
+title: "Folding & Shaping Techniques"
+date: "2025-06-15"
+author: "MaK"
+tags: ["techniques", "folding", "shaping", "gluten", "bread-making"]
+category: "Techniques"
+description: "Essential folding and shaping techniques for developing gluten structure and creating beautiful loaves"
+---
+
 # Folding & Shaping Techniques
 
 Proper folding and shaping are crucial for developing gluten structure and creating a beautiful final loaf. These techniques require practice but are essential skills for consistent results.

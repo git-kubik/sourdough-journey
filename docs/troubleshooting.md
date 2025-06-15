@@ -1,3 +1,11 @@
+---
+title: "Sourdough Troubleshooting Guide"
+date: "2025-06-15"
+author: "MaK"
+tags: ["troubleshooting", "problems", "solutions", "sourdough", "help"]
+description: "Comprehensive guide addressing common sourdough issues with detailed solutions"
+---
+
 # Sourdough Troubleshooting Guide
 
 Even experienced bakers encounter challenges. This comprehensive guide addresses the most common sourdough issues with detailed solutions.

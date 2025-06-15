@@ -1,3 +1,12 @@
+---
+title: "Your First Sourdough Loaf: Complete One-Day Guide"
+date: "2025-06-15"
+author: "MaK"
+tags: ["beginner", "first-loaf", "tutorial", "sourdough", "recipe"]
+category: "Getting Started"
+description: "Complete one-day guide for baking your first 700g sourdough loaf"
+---
+
 # Your First Sourdough Loaf: Complete One-Day Guide
 
 Welcome to your first sourdough baking adventure! This guide will walk you through creating a beautiful 700g sourdough loaf in one day. Since you've maintained your starter for a month, you're ready for this exciting milestone.

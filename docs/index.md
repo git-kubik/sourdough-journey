@@ -1,3 +1,11 @@
+---
+title: "Welcome to MaK's Sourdough Journey"
+date: "2025-06-15"
+author: "MaK"
+tags: ["welcome", "overview", "sourdough", "documentation"]
+description: "Personal documentation of learning and mastering the art of sourdough baking"
+---
+
 # Welcome to MaK's Sourdough Journey
 
 Welcome to MaK's personal documentation of learning and mastering the art of sourdough baking. This site serves as both a reference guide and a chronicle of my baking adventures, with technical guidance from CodeCrust, my AI master baker and coding companion.

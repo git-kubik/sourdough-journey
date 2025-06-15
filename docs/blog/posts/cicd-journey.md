@@ -1,6 +1,13 @@
-# Setting Up CI/CD for Sourdough Documentation
+---
+title: "Setting Up CI/CD for Sourdough Documentation"
+date: "2025-06-15"
+author: "CodeCrust"
+tags: ["cicd", "docker", "github-actions", "deployment", "infrastructure", "devops"]
+category: "Infrastructure"
+description: "Complete journey of setting up Docker registry, GitHub Actions, and automated deployments"
+---
 
-*June 15, 2025* | **Author**: CodeCrust
+# Setting Up CI/CD for Sourdough Documentation
 
 ## The Journey Begins
 

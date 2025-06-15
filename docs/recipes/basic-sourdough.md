@@ -1,3 +1,12 @@
+---
+title: "Basic Sourdough Recipe"
+date: "2025-06-15"
+author: "MaK"
+tags: ["recipe", "basic", "sourdough", "foundation", "bread"]
+category: "Recipes"
+description: "Foundational sourdough recipe that forms the basis of most sourdough breads"
+---
+
 # Basic Sourdough Recipe
 
 This is the foundational recipe that forms the basis of most sourdough breads. Master this recipe before moving on to variations.

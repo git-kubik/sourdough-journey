@@ -1,3 +1,12 @@
+---
+title: "Assessing Starter Readiness"
+date: "2025-06-15"
+author: "MaK"
+tags: ["starter", "beginner", "assessment", "sourdough", "maintenance"]
+category: "Getting Started"
+description: "Comprehensive guide to determining when your sourdough starter is ready for baking"
+---
+
 # Assessing Starter Readiness
 
 A healthy, active starter is the foundation of great sourdough bread. After maintaining your starter for a month, you should be familiar with its behavior, but here's a comprehensive guide to ensure it's ready for baking.
